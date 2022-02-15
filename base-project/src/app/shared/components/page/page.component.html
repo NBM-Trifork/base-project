@@ -1,15 +1,10 @@
-import { Component } from '@angular/core';
-import { User } from './User';
-
-@Component({
-  selector: 'storybook-page',
-  template: `<article>
-    <storybook-header
+<article>
+    <app-header
       [user]="user"
       (onLogout)="doLogout()"
       (onLogin)="doLogin()"
       (onCreateAccount)="doCreateAccount()"
-    ></storybook-header>
+    ></app-header>
     <section>
       <h2>Pages in Storybook</h2>
       <p>
@@ -57,21 +52,4 @@ import { User } from './User';
         Viewports addon in the toolbar
       </div>
     </section>
-  </article>`,
-  styleUrls: ['./page.css'],
-})
-export default class PageComponent {
-  user: User | null = null;
-
-  doLogout() {
-    this.user = null;
-  }
-
-  doLogin() {
-    this.user = { name: 'Jane Doe' };
-  }
-
-  doCreateAccount() {
-    this.user = { name: 'Jane Doe' };
-  }
-}
+  </article>

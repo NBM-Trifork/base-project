@@ -2,6 +2,7 @@
 import { Meta, Story } from '@storybook/angular/types-6-0';
 
 import { ButtonComponent } from './button.component';
+import { withDesign } from 'storybook-addon-designs';
 
 export default {
   title: 'Components/Button',
@@ -9,11 +10,16 @@ export default {
   argTypes: {
     backgroundColor: { control: 'color' },
   },
+  decorators: [withDesign]
 } as Meta;
+
+
 
 const Template: Story<ButtonComponent> = (args: ButtonComponent) => ({
   props: args,
+ 
 });
+
 
 
 export const Primary = Template.bind({});
@@ -22,16 +28,17 @@ Primary.args = {
   label: 'Button',
 };
 
+Primary.parameters ={
+    design: {
+        type: 'figma',
+        url: 'https://www.figma.com/file/SYjB6DD4YlJY1WdSqTYHsM/AngularComponents?node-id=29%3A217',
+      },
+}
 export const Secondary = Template.bind({});
 Secondary.args = {
   label: 'Button',
 };
 
-export const Large = Template.bind({});
-Large.args = {
-  size: 'large',
-  label: 'Button',
-};
 
 export const Small = Template.bind({});
 Small.args = {

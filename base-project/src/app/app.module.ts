@@ -1,14 +1,17 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ButtonComponent } from './button/button.component';
+import { AppRoutingModule } from './app-routing.module';
+import { BrowserModule } from '@angular/platform-browser';
+import { ButtonComponent } from './shared/components/button/button.component';
+import { HeaderComponent } from './shared/components/header/header.component';
+import { NgModule } from '@angular/core';
+import { PageComponent } from './shared/components/page/page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ButtonComponent
+    ButtonComponent,
+    HeaderComponent,
+    PageComponent
   ],
   imports: [
     BrowserModule,

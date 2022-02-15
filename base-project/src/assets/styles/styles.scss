@@ -1,0 +1,63 @@
+@import "./fonts.scss";
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+// COLORS
+:root {
+    --primary-orange: #FF6600;
+    --primary-dark: #445866;
+    --secondary-blue: #D5E3EB;
+    --secondary-blue-dark: #97BDD3;
+    --secondary-orange: #F2D2BB;
+    --secondary-orange-dark: #DFAB86;
+    --secondary-green: #CEDED6;
+    --secondary-green-dark: #445866;
+    --dark-80: rgba(86,97,104,80%);
+    --dark-60: rgba(128,137,142,60%);
+    --dark-40: rgba(171,176,179,40%);
+    --white: rgba(255,255,255,100%);
+    --white-80: rgba(255,255,255,80%);
+    --white-60: rgba(255,255,255,60%);
+    --white-40: rgba(255,255,255,40%);
+}
+
+body {
+    font-family: Poppins;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.subtitle {
+    font-family: Poppins;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.bold {
+    font-family: Poppins-SemiBold;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+}
+.button-M {
+    font-family: Poppins-SemiBold;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+}
+.button-S {
+    font-family: Poppins-SemiBold;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+

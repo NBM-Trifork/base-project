@@ -1,0 +1,39 @@
+<header>
+  <div class="wrapper">
+    <span  class="logo"> {{title}} </span>
+
+    <h1>Angular components</h1>
+    <div>
+      <div *ngIf="user">
+        <span class="welcome">
+          Welcome, <b>{{ user?.name }}</b
+          >!
+        </span>
+
+        <app-button
+          *ngIf="user"
+          size="small"
+          (onClick)="onLogout.emit($event)"
+          label="Log out"
+        ></app-button>
+      </div>
+      <div *ngIf="!user">
+        <app-button
+          *ngIf="!user"
+          size="small"
+          class="margin-left"
+          (onClick)="onLogin.emit($event)"
+          label="Log in"
+        ></app-button>
+        <app-button
+          *ngIf="!user"
+          size="small"
+          [primary]="true"
+          class="margin-left"
+          (onClick)="onCreateAccount.emit($event)"
+          label="Sign up"
+        ></app-button>
+      </div>
+    </div>
+  </div>
+</header>
