@@ -1,9 +1,11 @@
+import * as HeaderStories from '../../shared/components/header/Header.stories';
+
 import { Meta, Story, moduleMetadata } from '@storybook/angular';
 import { userEvent, within } from '@storybook/testing-library';
 
-import {ButtonComponent} from '../button/button.component';
+import {ButtonComponent} from '../../shared/components/button/button.component';
 import { CommonModule } from '@angular/common';
-import {HeaderComponent} from '../header/header.component';
+import {HeaderComponent} from '../../shared/components/header/header.component';
 import {PageComponent} from './page.component';
 
 export default {
@@ -27,10 +29,14 @@ const Template: Story<PageComponent> = (args: PageComponent) => ({
 
 export const LoggedOut = Template.bind({});
 
-// More on interaction testing: https://storybook.js.org/docs/angular/writing-tests/interaction-testing
+
 export const LoggedIn = Template.bind({});
+LoggedIn.args = {
+  ...HeaderStories.LoggedIn.args
+}
+// More on interaction testing: https://storybook.js.org/docs/angular/writing-tests/interaction-testing
 LoggedIn.play = async ({ canvasElement }) => {
   const canvas = within(canvasElement);
-  const loginButton = await canvas.getByRole('button', { name: /Log in/i });
+  const loginButton = await canvas.getByRole('button', { name: /Log out/i });
   await userEvent.click(loginButton);
 };

@@ -10,8 +10,6 @@ export class ButtonComponent implements OnInit {
   @Input()
   primary: boolean = false;
   @Input()
-  backgroundColor?: string;
-  @Input()
   size: 'small' | 'medium' = 'medium';
   @Input() clickAction = ()=> console.log("clicked");
   @Output() clickEvent: EventEmitter<any>= new EventEmitter();

@@ -2,25 +2,29 @@
 import { Meta, Story } from '@storybook/angular/types-6-0';
 
 import { ButtonComponent } from './button.component';
+import ButtonDocumentation from './Button-Documentation.mdx';
+import { componentWrapperDecorator } from '@storybook/angular';
 import { withDesign } from 'storybook-addon-designs';
 
 export default {
   title: 'Components/Button',
   component: ButtonComponent,
-  argTypes: {
-    backgroundColor: { control: 'color' },
+  decorators: [withDesign,
+    componentWrapperDecorator((story) => `<div style="margin: 3em">${story}</div>`)],
+  parameters: {
+    actions: {
+      handles: ['mouseover', 'click .btn'],
+    },
+    docs: {
+      page: ButtonDocumentation,
+    },
   },
-  decorators: [withDesign]
 } as Meta;
-
 
 
 const Template: Story<ButtonComponent> = (args: ButtonComponent) => ({
   props: args,
- 
 });
-
-
 
 export const Primary = Template.bind({});
 Primary.args = {

@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
-import { User } from '../../models/User';
+import { User } from '../../shared/models/User';
 
 @Component({
   selector: 'app-page',
   templateUrl: './page.component.html',
-  styleUrls: ['./page.component.scss']
+  styleUrls: ['./page.component.scss'],
 })
 export class PageComponent implements OnInit {
   user: User | null = null;
@@ -21,9 +21,7 @@ export class PageComponent implements OnInit {
   doCreateAccount() {
     this.user = { name: 'Jane Doe' };
   }
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

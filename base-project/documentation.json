@@ -200,7 +200,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".button {\n    font-family: Poppins-SemiBold;\n    font-style: normal;\n    text-transform: uppercase;\n    border: 3px solid var(--primary-orange) !important;\n    border-radius: 100pc;\n    cursor: pointer;\n    display: inline-block;\n  }\n\n  .button--primary {\n    color: var(--primary-orange);\n    border: 3px solid var(--primary-orange) !important;\n  }\n  .button--primary:hover {\n    color: var(--white);\n    background-color: var(--primary-orange);\n  }\n  \n  .button--secondary {\n    color: var(--primary-dark);\n    border: 1px solid var(--dark-40) !important;\n  }\n  .button--secondary:hover {\n    color: var(--white);\n    background-color: var(--primary-orange);\n  }\n\n  .button--small {\n    font-size: 12px;\n    line-height: 18px;\n    padding: 6px 24px;\n  }\n  .button--medium {\n    border: 3px;\n    padding: 12px 32px;\n    font-size: 14px;\n    line-height: 21px;\n  }\n\n  ",
+                    "data": ".button {\n    font-family: Poppins-SemiBold;\n    font-style: normal;\n    text-transform: uppercase;\n    border: 3px solid var(--primary-orange) !important;\n    border-radius: 100pc;\n    cursor: pointer;\n    display: inline-block;\n  }\n\n  .button--primary {\n    color: var(--primary-orange);\n    background-color: var(--white);\n    border: 3px solid var(--primary-orange) !important;\n  }\n  .button--primary:hover {\n    color: var(--white);\n    background-color: var(--primary-orange);\n  }\n  \n  .button--secondary {\n    color: var(--primary-dark);\n    background-color: var(--white);\n    border: 1px solid var(--dark-40) !important;\n  }\n  .button--secondary:hover {\n    color: var(--white);\n    background-color: var(--primary-orange);\n  }\n\n  .button--small {\n    font-size: 12px;\n    line-height: 18px;\n    padding: 6px 24px;\n  }\n  .button--medium {\n    border: 3px;\n    padding: 12px 32px;\n    font-size: 14px;\n    line-height: 21px;\n  }\n\n  ",
                     "styleUrl": "./button.component.scss"
                 }
             ],
@@ -654,21 +654,21 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/shared/components/button/button.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<ButtonComponent>",
-                "defaultValue": "(args: ButtonComponent) => ({\n  props: args,\n \n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/app/shared/components/header/Header.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<HeaderComponent>",
                 "defaultValue": "(args: HeaderComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/shared/components/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ButtonComponent>",
+                "defaultValue": "(args: ButtonComponent) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -833,7 +833,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<ButtonComponent>",
-                    "defaultValue": "(args: ButtonComponent) => ({\n  props: args,\n \n})"
+                    "defaultValue": "(args: ButtonComponent) => ({\n  props: args,\n})"
                 }
             ]
         },

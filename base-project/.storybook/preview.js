@@ -1,5 +1,5 @@
-import { setCompodocJson } from "@storybook/addon-docs/angular";
 import docJson from "../documentation.json";
+import { setCompodocJson } from "@storybook/addon-docs/angular";
 setCompodocJson(docJson);
 
 export const parameters = {
@@ -11,4 +11,11 @@ export const parameters = {
     },
   },
   docs: { inlineStories: true },
+  backgrounds: {
+    values: [
+      {name: 'blue-faded', value: '#D5E3EB'},
+      {name: 'orange-faded', value: '#F2D2BB'},
+      {name: 'green-faded', value: '#CEDED6'}
+    ]
+  }
 }

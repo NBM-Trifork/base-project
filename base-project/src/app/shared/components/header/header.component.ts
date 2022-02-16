@@ -10,6 +10,9 @@ import { User } from 'src/app/shared/models/User';
 export class HeaderComponent implements OnInit {
   @Input()
   user: User | null = null;
+  
+  @Input()
+  backgroundColor?: string;
 
   @Output()
   onLogin = new EventEmitter<Event>();

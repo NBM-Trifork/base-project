@@ -14,9 +14,12 @@ export default {
       imports: [CommonModule],
     }),
   ],
+  argTypes: {
+    backgroundColor: { control: 'color' },
+  },
   parameters: {
     // More on Story layout: https://storybook.js.org/docs/angular/configure/story-layout
-    layout: 'fullscreen',
+    layout: 'fullscreen'
   },
 } as Meta;
 

@@ -60,4 +60,20 @@ body {
     line-height: 18px;
     text-transform: uppercase;
 }
+label {
+    font-family: Poppins-SemiBold;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: var(--dark-60);
+}
 
+input {
+    border:none;
+    font-family: Poppins;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    padding-right: 10px;
+}

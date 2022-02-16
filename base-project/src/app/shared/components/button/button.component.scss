@@ -10,6 +10,7 @@
 
   .button--primary {
     color: var(--primary-orange);
+    background-color: var(--white);
     border: 3px solid var(--primary-orange) !important;
   }
   .button--primary:hover {
@@ -19,6 +20,7 @@
   
   .button--secondary {
     color: var(--primary-dark);
+    background-color: var(--white);
     border: 1px solid var(--dark-40) !important;
   }
   .button--secondary:hover {
