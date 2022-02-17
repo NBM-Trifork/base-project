@@ -753,21 +753,21 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/modules/page/Page.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<PageComponent>",
-                "defaultValue": "(args: PageComponent) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/app/shared/registration-form/registration-form.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<RegistrationFormComponent>",
                 "defaultValue": "(args: RegistrationFormComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/modules/page/Page.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<PageComponent>",
+                "defaultValue": "(args: PageComponent) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
