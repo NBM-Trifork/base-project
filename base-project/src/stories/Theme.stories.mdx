@@ -1,7 +1,16 @@
 import { withDesign } from 'storybook-addon-designs';
 import { Canvas, Meta, Story } from '@storybook/addon-docs';
+import ComponentDocumentation from './Component-Documentation.mdx'
 
-<Meta title="Introduction/Theme" decorators="{[withDesign]}" />
+
+<Meta title="Introduction/Theme" 
+      decorators="{[withDesign]}" />
+
+export const Template = (args) => ({ props: args });
+
+# Theme Documentation
+With `MDX`, we can define a story for `Theme` right in the middle of our
+Markdown documentation.
 
 
 <Story
@@ -11,8 +20,12 @@ import { Canvas, Meta, Story } from '@storybook/addon-docs';
        type: 'figma',
        url: 'https://www.figma.com/file/SYjB6DD4YlJY1WdSqTYHsM/AngularComponents?node-id=5%3A48'
      }
-   }}
- />
+     
+   }}>
+    {Template.bind({})}
+ </Story>
+
+
 
 <Story
    name="Components"
@@ -20,6 +33,10 @@ import { Canvas, Meta, Story } from '@storybook/addon-docs';
      design: {
        type: 'figma',
        url: 'https://www.figma.com/file/SYjB6DD4YlJY1WdSqTYHsM/AngularComponents?node-id=22%3A181'
-     }
-   }}
- />
+     },
+     docs: {
+      page: ComponentDocumentation,
+    },
+   }}>
+    {Template.bind({})}
+ </Story>

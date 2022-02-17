@@ -114,6 +114,19 @@ In the canvas view you can interact with your component and if you need to write
 Docs can be writting using .mdx. 
 
 
+<div className="tip-wrapper">
+  <span className="tip">Tip</span>To use mdx files install{' '}
+  <code>npm install @mdx-js/esbuild</code>
+</div>
+
+And add this to .stories/typings.d.ts
+```jsx
+declare module '*.mdx' {
+  const content: string;
+  export default content;
+}
+```
+
 #### Advantages:
 * Easy overview of your components
 * Good documentation
@@ -344,7 +357,7 @@ ExampleChangeEvent.play = async () => {
   </a>
 </div>
 
-```jxx
+```jsx
 Primary.parameters ={
     design: {
         type: 'figma',
@@ -360,3 +373,23 @@ Storybook comes with an addon to Figma, that makes it possible to show the desig
   <span className="tip">Tip</span>Edit the Markdown in{' '}
   <code>src/stories/Introduction/Introduction.stories.mdx</code>
 </div>
+
+
+## Good syntax to know
+[Go to specific documentation page](?path=/docs/components-button--primary)
+
+```jsx
+[Go to specific documentation page](?path=/docs/components-button--primary)
+```
+
+[Go to specific story canvas](?path=/story/components-button--primary)
+
+```jsx
+[Go to specific story canvas](?path=/story/components-button--primary)
+```
+
+[Go to the conclusion of the documentation page](?path=/docs/components-button--primary#primary)
+
+```jsx
+[Go to the conclusion of the documentation page](?path=/docs/components-button--primary#primary)
+```
