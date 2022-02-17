@@ -1,7 +1,6 @@
 import { withDesign } from 'storybook-addon-designs';
-import { Canvas, Meta, Story } from '@storybook/addon-docs';
-import ComponentDocumentation from './Component-Documentation.mdx'
-
+import { Canvas, Meta, Story, ColorPalette, ColorItem, IconGallery, IconItem, Typeset } from '@storybook/addon-docs';
+import Figma from './assets/figma.svg';
 
 <Meta title="Introduction/Theme" 
       decorators="{[withDesign]}" />
@@ -9,8 +8,75 @@ import ComponentDocumentation from './Component-Documentation.mdx'
 export const Template = (args) => ({ props: args });
 
 # Theme Documentation
-With `MDX`, we can define a story for `Theme` right in the middle of our
-Markdown documentation.
+We inspire and challenge - we are
+thought-leaders and European NextGen
+frontrunners who challenge our customer’s
+digital agenda across 6 business areas: three
+verticals, three horizontals
+
+## Colors
+The new color scheme has a primary, secondary, and a neutral
+color scheme for the Trifork brand. 
+
+<ColorPalette>
+<ColorItem
+    title="Primary Orange"
+    subtitle="The orange color works as a
+subheader above the main header, for quotations or highlighting
+a specific word or element."
+    colors={['#FF6600']}
+  />
+  <ColorItem
+    title="Primary Dark"
+    subtitle="The dark color is primarily used for
+headlines and can also function as a background color."
+    colors={['#445866']}
+  />
+
+### Faded
+The faded colors function as a background color.
+However, the bright faded colors can also be used
+as a headline color, but only in combination with
+the dark background color. 
+  
+  <ColorItem
+    title="Secondary Blue"
+    subtitle=""
+    colors={['#D5E3EB', '#97BDD3']}
+  />
+  <ColorItem
+    title="Secondary Orange"
+    subtitle=""
+    colors={['#F2D2BB', '#DFAB86']}
+  />
+  <ColorItem
+    title="Secondary Green"
+    subtitle=""
+    colors={['#CEDED6', '#9EC3B1']}
+  />
+
+<ColorItem
+    title=" Neutrals"
+    subtitle="Shades of Dark"
+    colors={['#566168', '#80898E', '#ABB0B3', '#DFE1E3', '#F4F5F6']}
+  />
+
+</ColorPalette>
+
+## Typography
+
+Header: Poppins-SemiBold
+Body: Poppins
+
+
+<Typeset fontSizes={['68px']} fontFamily={'Poppins-semibold'} sampleText="Headers" style={{ lineHeight: '102px'}} />
+<Typeset fontSizes={['40px']} fontFamily={'Poppins-semibold'} sampleText="Headline 2" style={{ lineHeight: '60px'}} />
+<Typeset fontSizes={['24px']} fontFamily={'Poppins-semibold'} sampleText="Headline 3" style={{ lineHeight: '36x'}} />
+
+<Typeset fontSizes={['24px']} fontFamily={'Poppins-regular'} sampleText="Subtitle" style={{ lineHeight: '36x'}} />
+<Typeset fontSizes={['14px']} fontFamily={'Poppins-regular'} sampleText="Body" style={{ lineHeight: '20x'}} />
+<Typeset fontSizes={['14px']} fontFamily={'Poppins-semibold'} sampleText="Bold" style={{ lineHeight: '20x'}} />
+
 
 
 <Story
@@ -27,16 +93,7 @@ Markdown documentation.
 
 
 
-<Story
-   name="Components"
-   parameters={{
-     design: {
-       type: 'figma',
-       url: 'https://www.figma.com/file/SYjB6DD4YlJY1WdSqTYHsM/AngularComponents?node-id=22%3A181'
-     },
-     docs: {
-      page: ComponentDocumentation,
-    },
-   }}>
-    {Template.bind({})}
- </Story>
+# Icons
+<IconGallery>
+  <IconItem name="Figma"><img src={Figma} alt="Figma" /></IconItem>
+</IconGallery>
