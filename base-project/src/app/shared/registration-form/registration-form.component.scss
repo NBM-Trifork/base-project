@@ -1,0 +1,32 @@
+.registrationForm {
+    background-color: var(--white);
+    box-shadow: 0px 4px 16px rgb(0 0 0 / 12%);
+    border-radius: 20px;
+    width: 750px;
+}
+
+.formfield {
+    padding: 32px;
+    min-height: 72px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formfield--middle{
+    border-top: 1px solid var(--dark-40)!important;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: top;
+    padding: 32px;
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+

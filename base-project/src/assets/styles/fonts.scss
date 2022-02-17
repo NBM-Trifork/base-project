@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url(../fonts/Poppins-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Poppins-SemiBold";
+    src: url(../fonts/Poppins-SemiBold.ttf) format("truetype");
+}
+
+
+@layer base {
+    h1, .h1 {
+        font-family: Poppins-SemiBold;
+        font-style: normal;
+        font-size: 68px;
+        line-height: 102px;
+    }
+    h2, .h2 {
+        font-family: Poppins-SemiBold;
+        font-style: normal;
+        font-size: 40px;
+        line-height: 60px;
+    }
+    h3, .h3 {
+        font-family: Poppins-SemiBold;
+        font-style: normal;
+        font-size: 24px;
+        line-height: 36px;
+    }
+    
+}

@@ -1,0 +1,894 @@
+[0m
+[0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m
+[0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m
+[0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m
+[48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m
+[48;5;255m [48;5;255m [0m [0m [0m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m
+[48;5;255m [48;5;255m [0m [0m [0m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m
+[48;5;255m [48;5;255m [0m [0m [0m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m
+[48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m
+[0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m
+[0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m
+[0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m
+
+1.1.18
+
+TypeScript version used by Compodoc : 4.5.5
+
+TypeScript version of current project : 4.5.2
+
+Node.js version : v16.13.1
+
+Operating system : macOS Monterey
+
+[09:28:31] No configuration file found, switching to CLI flags.
+[09:28:32] Using tsconfig file : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/tsconfig.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.browserslistrc
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.npmignore
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.editorconfig
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.gitignore
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/README.md
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/angular.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/build-storybook.log
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/documentation.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/karma.conf.js
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/package-lock.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/package.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/tsconfig.app.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/tsconfig.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/tsconfig.spec.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.vscode/extensions.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.storybook/main.js
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.vscode/launch.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.vscode/tasks.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.storybook/tsconfig.json
+[09:28:32] Ignoring       : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.storybook/typings.d.ts
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.storybook/preview.js
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/favicon.ico
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/index.html
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/polyfills.ts
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/main.ts
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/test.ts
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/storybook-static/225.0ebecbc175e2ba455cd1.manager.bundle.js
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/storybook-static/225.0ebecbc175e2ba455cd1.manager.bundle.js.LICENSE.txt
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/storybook-static/278.e5e4a062b19d5f1201ea.manager.bundle.js.LICENSE.txt
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/storybook-static/290.bce7b927.iframe.bundle.js
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/storybook-static/273.50c91b87.iframe.bundle.js
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/storybook-static/278.e5e4a062b19d5f1201ea.manager.bundle.js
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/storybook-static/290.bce7b927.iframe.bundle.js.LICENSE.txt
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/storybook-static/291.b946a219.iframe.bundle.js
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/storybook-static/295.1ebb465db8bd6da209ab.manager.bundle.js
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/storybook-static/299.acd83dd0.iframe.bundle.js
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/storybook-static/319.ade4623819dbe6d99a30.manager.bundle.js
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/storybook-static/291.b946a219.iframe.bundle.js.LICENSE.txt
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/storybook-static/331.94d4b9265dc25b8b574d.manager.bundle.js
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/storybook-static/385.223a420f.iframe.bundle.js
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/storybook-static/331.94d4b9265dc25b8b574d.manager.bundle.js.LICENSE.txt
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/storybook-static/459.a5e8ebbc.iframe.bundle.js
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/storybook-static/459.a5e8ebbc.iframe.bundle.js.LICENSE.txt
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/storybook-static/459.bc504d715b844c31bac3.manager.bundle.js
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/storybook-static/574.523b82241306b6167794.manager.bundle.js
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/storybook-static/722.ec7b9fcd.iframe.bundle.js
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/storybook-static/747.88777067.iframe.bundle.js
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/storybook-static/895.f68de39b.iframe.bundle.js
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/storybook-static/895.f68de39b.iframe.bundle.js.LICENSE.txt
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/storybook-static/899.caed6f7e.iframe.bundle.js
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/storybook-static/899.caed6f7e.iframe.bundle.js.LICENSE.txt
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/storybook-static/940.702df736fce6cc9a942f.manager.bundle.js
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/storybook-static/940.702df736fce6cc9a942f.manager.bundle.js.LICENSE.txt
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/storybook-static/Poppins-Regular.ttf
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/storybook-static/Poppins-SemiBold.ttf
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/storybook-static/favicon.ico
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/storybook-static/index.html
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/storybook-static/iframe.html
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/storybook-static/main.css
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/storybook-static/main.5d49c7b4.iframe.bundle.js
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/storybook-static/main.fc4494c5050d4e922fba.manager.bundle.js
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/storybook-static/runtime~main.45350c6c.iframe.bundle.js
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/storybook-static/runtime~main.aecf38f9bb6edbe6b0d9.manager.bundle.js
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/assets/.gitkeep
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/app/app-routing.module.ts
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/app/app.component.html
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/app/app.component.scss
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/app/app.component.ts
+[09:28:32] Ignoring       : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/app/app.component.spec.ts
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/app/app.module.ts
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/environments/environment.ts
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/environments/environment.prod.ts
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/stories/Introduction.stories.mdx
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/stories/Theme.stories.mdx
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/stories/Component-Documentation.mdx
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/assets/fonts/Poppins-Regular.ttf
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/assets/fonts/Poppins-SemiBold.ttf
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/assets/styles/fonts.scss
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/assets/styles/styles.scss
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/stories/assets/figma.svg
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/storybook-static/assets/styles/fonts.scss
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/storybook-static/assets/styles/styles.scss
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/storybook-static/assets/fonts/Poppins-Regular.ttf
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/storybook-static/assets/fonts/Poppins-SemiBold.ttf
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/storybook-static/static/media/figma.753c0742.svg
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/023f50bf146a00da35ebd647392de5ba.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/078e6ad644bdf287742f9fcccf6c524b.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/05253cf697b4bcefcf159e5a674ed6c1.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/0863acfbb8f6cf22e3d2fd3eef85ad66.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/0a211ecc073fc2bd9fdc24d890eef6c9.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/0c8bd4c8fd1692741e1646455262e776.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/0e0c1372ee5c8b994ad596dc5086001b.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/0c69266d888a6e08971051ca2a232841.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/0eb691529d891308802dc2e0fceca7b4.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/0f8a7f08dbba38cc6854b9c8785c6f75.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/127a3b9a92562edcb1f40c87903c43d4.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/13d42afe3739657ac9b35f05f8706134.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/0f99ea11d40a3f01315346b5212e2e73.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/13e9caa259f945fdcc00cb17d193e850.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/1644281953176180e705d1209a0a6462.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/190c919640210cdcdec63479236e4c13.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/19273ed1b72ad7988078c823c72b9d0b.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/192e982b9944c7c2abe4bb56fdebc7a8.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/195a3602a7678fc52de779fa64dcb23c.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/19a27c243c617c2fc2909ba863eacc37.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/19e2e7e269fd7b14044c59645b9debf7.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/1baa3098f495a5b4b4d272384156f9a5.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/1e965addefe7dd847ddb18772e5167fd.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/1e9c5821670c7715d6c26899a5cedad9.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/1ea9e35d41e71530deed06df0bbfc1da.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/212bb998d79470174dd435cc38c743d3.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/214076dfc90fe19cba8b2708e28e68dd.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/240a0688e71230ef37d7512fd6b016b3.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/224b04432421847203e4065340082d4e.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/2398996630d6751569edaf664d3ca50b.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/25698e463f6b21203b568c7c2328e2dc.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/261d93db593908c6e5c9b32091aaacc1.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/2738617643d81f12e69f4fd6ec0f58e0.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/28673bdbcbf233aa64debff800a5d327.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/27cfa59a5ae389939de4e55fc62a6d07.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/247ecb8c455f66c42cf5a7752e14281a.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/320ec8dc2fe619fa898ec79466f9aec6.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/35db797bcff878d0cf8076038362011e.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/3685068a52dda0c54dca265e5bf3506f.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/3722885053b00e5b482279ca67ab29f9.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/389f318ddb8114114b8c6c76091ae6ae.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/39c4ca03def5b2799b21577a1e3c25e4.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/39df3b3bf08c45e63156b26c7755c606.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/3c20000a0266d4889cd09c51f883302b.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/3c3180a66f8f65b41ab250396d499b73.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/3d11293cacc223071ef0c36fc5fb4f29.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/3dc6eecb87be206145083eab9f812adb.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/3e5af55ae578e3236a57e8608dfc949f.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/3ebc76c8eb9a6bf622329702ac101999.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/3f7e2a4c8634dfa533cbd7a004edc2d8.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/43c0072af2ee3771a08bb0e3d2c13587.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/466454d2fd0d31e58a2e3f230ad972f8.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/46b2e2e1d8636730516655e0b1e41e53.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/49279d1858b33e6b581c376203d154fc.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/4b77cc5aa60707d6c6f8258c0544e885.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/4e2a10dcd7e0e99defddfced8e88cedb.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/5362335fba82fd34db7344b119699d29.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/555d0343410c7e439b2d7b2fae021959.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/4f0f83493daaf84e5c358fffc91173ce.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/4fc3ba4c3a37afbfc593fe4ca33b931e.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/54efabf848af3820723bc47ff9c21f00.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/56aeb4c7005d0d769d2619920b404895.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/57f91e6a3af9ee6dadc1f219d74bfa1a.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/5945ccb72b915d61dff560f46a9e526a.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/5b35c74c9f5e158b227f41c92fdd71b9.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/5a539b5b1b6b9d576ce26d8932076775.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/5cb8b114265978a08b3bcec6866ceda4.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/5d0f21fa1e37fad3def04b8393e819bd.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/5d4d3c5edf128d44daeba07a70fa5539.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/5fb9b3573824a856594afc55b0f7ef33.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/6270a3339ec7dfbf640c34626d833c24.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/62d249403893eae3a2a20514747a4933.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/640ecadfc79912f3c195946aa44c7edb.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/64e40fa09f3f3f136832d2de6aba4395.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/6616aa00628e8f715d9758fac5c0133e.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/6645638c5a4885112f1cd7df472436ee.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/66640f19b5486e2ea010ac20ced4fe70.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/6682466133a030486c811844466c8a68.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/67f3f469442beaef089d45c0fb1ed223.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/68321e4ab88d026da454f89cabe45983.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/66e6462c6173c9583d09f48492890dd1.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/6739750f58b1bb7d3c8296720e411f10.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/69a591b80da17ca9dccca2e27fca555e.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/6f0e2ad8647793ff9c49d006a14a3d6e.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/707af35d68c750f02d7a36b3704da678.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/6fe40a55af933b847bff9d839ebeb317.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/687b8742cd49b1dc23b36e096a6ae7db.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/70a0a28d1927918fb08eb2dcec2a8956.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/70e4a05f24c8bc4eca52ec38af27c1df.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/72fa4481b4e5c518e8339eac380b3231.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/750ce13068a7d78d63953449e1b8a871.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/778966ed68342eebfdd6206457e99607.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/77e5707a4125248e1fc437cd40cd0dae.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/77ff5196606673aeb68eb9465f8d8c79.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/7829929abf945fbd810f6f0c5bf50002.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/7979fc4f9e82ce6ca9f29f449bfd48fe.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/7991c55b5b2857e9ab05f0ef8b9d68d0.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/7bb51b58a866017077dd90a502d27659.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/7c18e92159c4ad1c896e32ab2d23002a.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/7c2ef11f86d9314460fbd2e91121058f.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/7d893e28d1f57229b6b02c261e67aa3c.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/80811572a1d99fb75899f0d518762e5e.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/80a7b9c54cd647f39e6ca16458d3bb60.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/82b24e73ae35d663a478498399f7b3e8.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/84bcb9624b4555971f4cc575b4823ca7.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/865d391b1593c5116da31b956d298458.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/8685686ce115e4f132d4021126c1ee4b.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/86ab1cf5d20cbc7c05456f6ae8c323d2.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/8af1be84b0c6976c3b287998cadfc08d.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/87fa2b823b7f38ae58de123cd27907d1.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/8e01952c07cbcccf2e3ba15af8067241.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/8b5b72bb3ab2a788566571e061844983.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/8e045ed7ce8cb79518790c5fafa55792.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/9156f5d16d95a253b0622532b25d0798.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/916ca9c4d8a9a716a63bb700c71cb0db.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/92264e5a39e2d12dd8b257e2c4f20406.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/91df7e32e6da103598aa1f717696d486.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/941e64158df1ae489345ad102d5306de.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/966100eb101f3fc00e6c97a1640b4d85.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/9610dd2a958f75ccc8a6d49bfd8dbec9.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/980334e473f2bb6835ea2f28a71e0430.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/98011a83ca2074143ab3bc5169520788.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/99534c6cf1dfd37ba3da6217875a4f3e.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/99732806f2b89909ca062ab7b99d956e.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/9ad785a760488eaafbd074f88d8edd5c.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/9af4e7da7cb25aa6b642c994ce18e7b1.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/9b02ce9d1773f57c3500b6e9969a1a7f.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/9e4f84318a0d89a7a2ef19726665f357.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/9f770cd909564cf1b49fa0122254d6a6.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/9d23beebc15f8ef0a00d2426c9bb38a0.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/a22ec1f5ad65324bacfe46991e49bd48.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/a2b73bb1fae5057e11b2caf157e1183b.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/a37f6b740a3a3feb78a5c94afdc7180a.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/a451ea4b677548767f5da6564af5611e.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/a6ca53b786a6c8c7873e3b778c20a401.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/a6d7993526956f37ddce5fe3cdb738ef.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/a34f5fe85e2a32cb43cc590eea66461e.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/a73b1115791f022ecb454079e4fdb927.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/a558cbc12cdf949c432ccc0670ab7051.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/a75278707b2a708c5469f10b6c6b90e0.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/a76be05b0b9ab08052032dbd48c2c5d6.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/a8a691a666889d0d299bba9531860736.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/a984f902714c079efc45da90c0d95636.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/a9bae795760bf233e1e9c76cfef7600e.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/ac54cb076da31c3d450a05830c52ab75.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/ad18d2bc4b95a627c423f7fb24a57881.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/ad4b48ce4db69fb96e1efcee5e2b69c9.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/ad88106ca63208ad93e9ad0dcea4bfa8.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/b1b7ab6984d43d2b2ce519dc9d4c77aa.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/b32d87fbda5487ea89cfa02388705e2d.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/af23a04dc3dadc8f383d9b11ad51751c.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/b3934745d9d516d44f39a4501cf9c1d5.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/b5aa1ca41f8c79eb55beb7f0e650acb9.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/b431d88e70886331acd02d6124e1a399.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/b688d8ce94227f7862ddf5f12d89d3fe.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/b7b46fb7944722d106202fa7ead1ed01.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/b9a01cd794c00b515466c6f33247d075.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/b9d2654d59e5b6a1e81bcdde5e7da747.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/b88d02b2e8f3721363808c2780d1aca6.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/bc79c040264228a35518a292106c5785.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/bdac49497677d9267dd29d4ca7aab91a.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/beaadf3890f28b34bd67cf9f0dea304f.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/bf28deb5543aa2521f79d04033942e01.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/bf293aa184db8347bdc2d378b600d58c.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/c302b0708135b3888651d01f2c17b3cc.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/c29deb541385f2c4c97c424d7c6c1a69.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/c3137a0f664c7028b2fa07f5a25be3a3.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/c36db011c3d51d905538729af1ee4d20.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/c4bdb03e31ebff49c7074e1a7901d919.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/c586fb265c8f0ab35f445be32732a414.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/c5d76a6e2689a0432533e86c535517fb.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/c63ab655f7562b00efa82ed5b3568c57.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/c64753439ae539ea5e67fabb7a658ac7.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/c677da5076ae0f5dfe6a9b3fb2bfcb87.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/c704c0e356ba0426412a99e3ed537c32.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/c7bed961842950b5d572af2a13e96879.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/c9f45b7d7471a9e097a4b193c9f05f68.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/caedfbae60f43620f7e09a0829f9ec66.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/cccc1b0e529912694740443c3bbacbd3.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/cd7f701344ce3a5f1eba770ecd9ce2a1.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/cde95c6da406130f375ca84475ef851a.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/d2e79f38fc37c456b980db797391a7f2.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/d33390b067f9b884c0a8850929944760.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/d606388c1f5e5b62baa55a02581716b4.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/d4ee987d2ec02c11f13b484c834945c5.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/d8477aae6a7a3f9218d9d2c70eb33b28.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/dab12e4c7ac587e29ca28101c7792f9c.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/db016ce9ac47ecbfc7ac3ce4c0642a3b.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/db3659c8b3a7a26cd80c4091af50de2d.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/db37bbc79d375a56befb2b80d1d24140.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/dbaa24b0c188b0e8343317d1174a049f.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/dc683aea108c7a85a55c647d196a97f2.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/dca819dc08ace5fc3a387a5fd11ba072.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/dd638bf885cd11dbad7faab58dc89005.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/dda89fb7c2b78dde09dd561bf4ce65fe.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/df7c2084754e91dc1cb287072508affa.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/dfb25cc8745f1b617bb614e6546d8d2f.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/dcb0dc0c8f4b2664d8dd2cf4c408d3bc.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/e0be694220297372d86d40dafc94053d.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/e0d14c18daf534d5166f7c3a1798d784.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/e1fa4273dc295f34ae6f1ddeed24b36b.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/e3502032d417a585816521f6e1e1ba0d.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/e3d64eaca340d066104556e57c120d46.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/e42cf428f2fc21a03798c64e68fc6332.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/e45b0f971ad8b37039520a597f9b0d87.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/e4fb0fd19a9ee1646807af90081cd1a3.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/e58d54fb2795aed48660bd9341f01be3.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/ea0c42da2111e0c50078147bed82da87.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/ea5725af18442a159b6592b9dca1f42d.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/eb870cc6cfba0bb7eb218b206ab8447a.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/ea6c71a288fa405c0d6b3fabfb350438.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/ec6466d0f099fc19e2ad3a3d4f492e29.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/eb9860d30f3cf7b264b03327806d087f.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/ec77fc8ea89460bf7103157fab7cba90.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/edf3e1143cfe62714bbd4d09152b9270.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/edfba3834b01c0d03fe1838b33b32ffc.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/ee47a50ccdeee8c3de7869fa1adba88f.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/ee51647a85f5c41ce26fa91a2c98f395.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/ee7e98efede72ce12a4afa61f26197ad.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/ef14c3857c6f0ffd1be837b00ffdf45f.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/f16a5bec5305a6917be19f2f58e3a2e1.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/f2b88f9ce1b57c888a3eebad4abb951e.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/f2f8a3c4b41a77288ac7441500fab3ea.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/f4180f0298d0eccc6de7f6a7773b31bf.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/f5a59f5ca6fcac98fcd15d70cb19c3c7.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/f5eb41a1a1278c40d3bbca74497b3811.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/f69e4312246c81a1eb5b4fd1f81f7353.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/f6c27f7fa73ddbd7614489ef3eee1297.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/f6ca8bdc68aa831414233f314c20df8b.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/f7b2c62f0e79f3fd80d83037bd6221af.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/f8032a752c0499597dc9de30cca71352.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/f970f2d3f5ebef56b02a0be660a5170d.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/fb6be637299ed5be9adb4e64590cdfda.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/fca06f69bbac9c2760ef99253aedd2ab.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/fd64499817f4e47e2224297fa1d842ed.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/fbf80294fdd84253f32894e31660b6ab.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/fd6a5d8fb4fec427ca871c7ce2c4f58f.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/ffeed21455611cbc21378cbe8c7c70a1.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/babel-webpack/ff613382313cf786ed5e1991f9f3dc2f.json
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/app/shared/models/User.ts
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/app/shared/registration-form/registration-form.component.html
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/app/shared/registration-form/registration-form.component.scss
+[09:28:32] Ignoring       : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/app/shared/registration-form/registration-form.component.spec.ts
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/app/shared/registration-form/registration-form.stories.ts
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/app/shared/registration-form/registration-form.component.ts
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/app/modules/page/Page.stories.ts
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/app/modules/page/page.component.html
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/app/modules/page/page.component.scss
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/app/modules/page/page.component.ts
+[09:28:32] Ignoring       : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/app/modules/page/page.component.spec.ts
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/angular-webpack/b55433a71e87e42acd5f101544220271122ea964/0.pack
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/angular-webpack/b55433a71e87e42acd5f101544220271122ea964/1.pack
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/angular-webpack/b55433a71e87e42acd5f101544220271122ea964/2.pack
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/angular-webpack/f7218fd0fa7ccf83c034f5104951338142e11003/1.pack
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/angular-webpack/b55433a71e87e42acd5f101544220271122ea964/index.pack
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/angular-webpack/f7218fd0fa7ccf83c034f5104951338142e11003/0.pack
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/angular-webpack/f7218fd0fa7ccf83c034f5104951338142e11003/index.pack
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/angular-webpack/b55433a71e87e42acd5f101544220271122ea964/index.pack.old
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.angular/cache/13.2.3/angular-webpack/f7218fd0fa7ccf83c034f5104951338142e11003/index.pack.old
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/app/shared/components/header/Header.stories.ts
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/app/shared/components/header/header.component.html
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/app/shared/components/button/Button-Documentation.mdx
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/app/shared/components/header/header.component.scss
+[09:28:32] Ignoring       : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/app/shared/components/header/header.component.spec.ts
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/app/shared/components/header/header.component.ts
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/app/shared/components/button/button.component.html
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/app/shared/components/button/button.component.scss
+[09:28:32] Ignoring       : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/app/shared/components/button/button.component.spec.ts
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/app/shared/components/button/button.stories.ts
+[09:28:32] Including      : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/app/shared/components/button/button.component.ts
+[09:28:32] Searching package.json file
+[09:28:32] package.json file found
+[09:28:32] Processing package.json dependencies
+[09:28:32] Searching README.md, CHANGELOG.md, CONTRIBUTING.md, LICENSE.md, TODO.md files
+[09:28:32] README.md file found
+[09:28:32] Error during /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/CHANGELOG read
+[09:28:32] Continuing without CHANGELOG.md file
+[09:28:32] Error during /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/CONTRIBUTING read
+[09:28:32] Continuing without CONTRIBUTING.md file
+[09:28:32] Error during /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/LICENSE read
+[09:28:32] Continuing without LICENSE.md file
+[09:28:32] Error during /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/TODO read
+[09:28:32] Continuing without TODO.md file
+[09:28:32] Get dependencies data
+[09:28:35] parsing        : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/polyfills.ts
+[09:28:35] parsing        : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/main.ts
+[09:28:35] parsing        : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/test.ts
+[09:28:35] found          : require
+[09:28:35] found          : context
+[09:28:35] parsing        : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/app/app-routing.module.ts
+[09:28:35] Analysing routes definitions and clean them if necessary
+[09:28:35] found          : AppRoutingModule
+[09:28:35]                : - imports:
+[09:28:35]                : 	- RouterModule
+[09:28:35]                : - exports:
+[09:28:35]                : 	- RouterModule
+[09:28:35] parsing        : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/app/app.component.ts
+[09:28:35] found          : AppComponent
+[09:28:35] parsing        : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/app/app.module.ts
+[09:28:35] found          : AppModule
+[09:28:35]                : - imports:
+[09:28:35]                : 	- BrowserModule
+[09:28:35]                : 	- AppRoutingModule
+[09:28:35]                : 	- ReactiveFormsModule
+[09:28:35]                : - declarations:
+[09:28:35]                : 	- AppComponent
+[09:28:35]                : 	- ButtonComponent
+[09:28:35]                : 	- HeaderComponent
+[09:28:35]                : 	- PageComponent
+[09:28:35]                : 	- RegistrationFormComponent
+[09:28:35]                : - bootstrap:
+[09:28:35]                : 	- AppComponent
+[09:28:35] parsing        : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/environments/environment.ts
+[09:28:35] found          : environment
+[09:28:35] parsing        : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/environments/environment.prod.ts
+[09:28:35] found          : environment
+[09:28:35] parsing        : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/app/shared/models/User.ts
+[09:28:35] found          : User
+[09:28:35] parsing        : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/app/shared/registration-form/registration-form.stories.ts
+[09:28:35] found          : Template
+[09:28:35] found          : FilledForm
+[09:28:35] parsing        : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/app/shared/registration-form/registration-form.component.ts
+[09:28:35] found          : RegistrationFormComponent
+[09:28:35] parsing        : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/app/modules/page/Page.stories.ts
+[09:28:35] found          : Template
+[09:28:35] found          : LoggedOut
+[09:28:35] found          : LoggedIn
+[09:28:35] parsing        : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/app/modules/page/page.component.ts
+[09:28:35] found          : PageComponent
+[09:28:35] parsing        : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/app/shared/components/header/Header.stories.ts
+[09:28:35] found          : Template
+[09:28:35] found          : LoggedIn
+[09:28:35] found          : LoggedOut
+[09:28:35] parsing        : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/app/shared/components/header/header.component.ts
+[09:28:35] found          : HeaderComponent
+[09:28:35] parsing        : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/app/shared/components/button/button.stories.ts
+[09:28:35] found          : Template
+[09:28:35] found          : Primary
+[09:28:35] found          : Secondary
+[09:28:35] found          : Small
+[09:28:35] parsing        : /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/app/shared/components/button/button.component.ts
+[09:28:35] found          : ButtonComponent
+[09:28:35] -------------------
+[09:28:35] Project statistics 
+[09:28:35] - files      : 349
+[09:28:35] - module     : 2
+[09:28:35] - component  : 5
+[09:28:35] - interface  : 1
+[09:28:35] -------------------
+[09:28:35] Prepare components
+[09:28:35]  AppComponent has a templateUrl, include it
+[09:28:35]  AppComponent has styleUrls, include them
+[09:28:35]  ButtonComponent has a templateUrl, include it
+[09:28:35]  ButtonComponent has styleUrls, include them
+[09:28:35]  HeaderComponent has a templateUrl, include it
+[09:28:35]  HeaderComponent has styleUrls, include them
+[09:28:35]  PageComponent has a templateUrl, include it
+[09:28:35]  PageComponent has styleUrls, include them
+[09:28:35]  RegistrationFormComponent has a templateUrl, include it
+[09:28:35]  RegistrationFormComponent has styleUrls, include them
+[09:28:35] Prepare modules
+[09:28:35] Process routes
+[09:28:35] Prepare interfaces
+[09:28:35] Prepare miscellaneous
+[09:28:35] Process documentation coverage report
+[09:28:35] Generating documentation in export format json
+[09:28:35] Documentation generated in ./ in 3.506 seconds
+info @storybook/angular v6.4.19
+info 
+info => Cleaning outputDir: /var/folders/br/9r2kkygx6bl21q13qjvg_6_c0000gn/T/chromatic--50894-zl4BSUllcSOL
+info => Loading presets
+info => Compiling manager..
+info => Compiling preview..
+(node:50929) [DEP0148] DeprecationWarning: Use of deprecated folder mapping "./" in the "exports" field module resolution of the package at /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/node_modules/tslib/package.json.
+Update this package.json to use a subpath pattern like "./*".
+(Use `node --trace-deprecation ...` to show where the warning was created)
+info => Using implicit CSS loaders
+info => Loading angular-cli config for angular >= 13.0.0
+info => Using angular project with "tsConfig:/Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/.storybook/tsconfig.json"
+WARN Your Storybook startup uses a solution that will not be supported in version 7.0. 
+WARN You must use angular builder to have an explicit configuration on the project used in angular.json
+WARN Read more at:
+WARN - https://github.com/storybookjs/storybook/blob/next/MIGRATION.md#sb-angular-builder)
+WARN - https://github.com/storybookjs/storybook/blob/next/MIGRATION.md#angular13)
+info => Using angular project "base-project:build" for configuring Storybook
+info => Using default Webpack5 setup
+<s> [webpack.Progress] 0% 
+
+<s> [webpack.Progress] 1% setup initialize
+<s> [webpack.Progress] 1% setup initialize HtmlWebpackPlugin
+<s> [webpack.Progress] 1% setup initialize
+<s> [webpack.Progress] 2% setup before run
+<s> [webpack.Progress] 2% setup before run NodeEnvironmentPlugin
+<s> [webpack.Progress] 2% setup before run
+<s> [webpack.Progress] 3% setup run
+<s> [webpack.Progress] 3% setup run
+<s> [webpack.Progress] 4% setup normal module factory
+<s> [webpack.Progress] 4% setup normal module factory CaseSensitivePathsPlugin
+<s> [webpack.Progress] 4% setup normal module factory
+<s> [webpack.Progress] 5% setup context module factory
+<s> [webpack.Progress] 5% setup context module factory
+<s> [webpack.Progress] 6% setup before compile
+<s> [webpack.Progress] 6% setup before compile angular-compiler
+<s> [webpack.Progress] 6% setup before compile ProgressPlugin
+<s> [webpack.Progress] 6% setup before compile
+<s> [webpack.Progress] 7% setup compile
+<s> [webpack.Progress] 7% setup compile ExternalsPlugin
+<s> [webpack.Progress] 7% setup compile
+<s> [webpack.Progress] 8% setup compilation
+<s> [webpack.Progress] 8% setup compilation CopyPlugin
+<s> [webpack.Progress] 8% setup compilation angular-compiler
+<s> [webpack.Progress] 8% setup compilation mini-css-extract-plugin
+<s> [webpack.Progress] 8% setup compilation ArrayPushCallbackChunkFormatPlugin
+<s> [webpack.Progress] 8% setup compilation JsonpChunkLoadingPlugin
+<s> [webpack.Progress] 8% setup compilation StartupChunkDependenciesPlugin
+<s> [webpack.Progress] 8% setup compilation ImportScriptsChunkLoadingPlugin
+<s> [webpack.Progress] 8% setup compilation FetchCompileWasmPlugin
+<s> [webpack.Progress] 8% setup compilation FetchCompileAsyncWasmPlugin
+<s> [webpack.Progress] 8% setup compilation WorkerPlugin
+<s> [webpack.Progress] 8% setup compilation SplitChunksPlugin
+<s> [webpack.Progress] 8% setup compilation RuntimeChunkPlugin
+<s> [webpack.Progress] 8% setup compilation ResolverCachePlugin
+<s> [webpack.Progress] 8% setup compilation HtmlWebpackPlugin
+<s> [webpack.Progress] 8% setup compilation
+<s> [webpack.Progress] 9% setup compilation
+<s> [webpack.Progress] 9% setup compilation named-chunks-plugin
+<s> [webpack.Progress] 9% setup compilation DedupeModuleResolvePlugin
+<s> [webpack.Progress] 9% setup compilation AnyComponentStyleBudgetChecker
+<s> [webpack.Progress] 9% setup compilation mini-css-extract-plugin
+<s> [webpack.Progress] 9% setup compilation SuppressExtractedTextChunks
+<s> [webpack.Progress] 9% setup compilation DefinePlugin
+<s> [webpack.Progress] 9% setup compilation ProvidePlugin
+<s> [webpack.Progress] 9% setup compilation ProgressPlugin
+<s> [webpack.Progress] 9% setup compilation ChunkPrefetchPreloadPlugin
+<s> [webpack.Progress] 9% setup compilation SourceMapDevToolPlugin
+<s> [webpack.Progress] 9% setup compilation JavascriptModulesPlugin
+<s> [webpack.Progress] 9% setup compilation JsonModulesPlugin
+<s> [webpack.Progress] 9% setup compilation AssetModulesPlugin
+<s> [webpack.Progress] 9% setup compilation EntryPlugin
+<s> [webpack.Progress] 9% setup compilation EntryPlugin
+<s> [webpack.Progress] 9% setup compilation EntryPlugin
+<s> [webpack.Progress] 9% setup compilation EntryPlugin
+<s> [webpack.Progress] 9% setup compilation EntryPlugin
+<s> [webpack.Progress] 9% setup compilation EntryPlugin
+<s> [webpack.Progress] 9% setup compilation EntryPlugin
+<s> [webpack.Progress] 9% setup compilation EntryPlugin
+<s> [webpack.Progress] 9% setup compilation EntryPlugin
+<s> [webpack.Progress] 9% setup compilation EntryPlugin
+<s> [webpack.Progress] 9% setup compilation EntryPlugin
+<s> [webpack.Progress] 9% setup compilation EntryPlugin
+<s> [webpack.Progress] 9% setup compilation EntryPlugin
+<s> [webpack.Progress] 9% setup compilation EntryPlugin
+<s> [webpack.Progress] 9% setup compilation EntryPlugin
+<s> [webpack.Progress] 9% setup compilation EntryPlugin
+<s> [webpack.Progress] 9% setup compilation EntryPlugin
+<s> [webpack.Progress] 9% setup compilation EntryPlugin
+<s> [webpack.Progress] 9% setup compilation EntryPlugin
+<s> [webpack.Progress] 9% setup compilation RuntimePlugin
+<s> [webpack.Progress] 9% setup compilation InferAsyncModulesPlugin
+<s> [webpack.Progress] 9% setup compilation DataUriPlugin
+<s> [webpack.Progress] 9% setup compilation FileUriPlugin
+<s> [webpack.Progress] 9% setup compilation CompatibilityPlugin
+<s> [webpack.Progress] 9% setup compilation HarmonyModulesPlugin
+<s> [webpack.Progress] 9% setup compilation AMDPlugin
+<s> [webpack.Progress] 9% setup compilation RequireJsStuffPlugin
+<s> [webpack.Progress] 9% setup compilation CommonJsPlugin
+<s> [webpack.Progress] 9% setup compilation LoaderPlugin
+<s> [webpack.Progress] 9% setup compilation LoaderPlugin
+<s> [webpack.Progress] 9% setup compilation NodeStuffPlugin
+<s> [webpack.Progress] 9% setup compilation APIPlugin
+<s> [webpack.Progress] 9% setup compilation ExportsInfoApiPlugin
+<s> [webpack.Progress] 9% setup compilation WebpackIsIncludedPlugin
+<s> [webpack.Progress] 9% setup compilation ConstPlugin
+<s> [webpack.Progress] 9% setup compilation UseStrictPlugin
+<s> [webpack.Progress] 9% setup compilation RequireIncludePlugin
+<s> [webpack.Progress] 9% setup compilation RequireEnsurePlugin
+<s> [webpack.Progress] 9% setup compilation RequireContextPlugin
+<s> [webpack.Progress] 9% setup compilation ImportPlugin
+<s> [webpack.Progress] 9% setup compilation SystemPlugin
+<s> [webpack.Progress] 9% setup compilation ImportMetaPlugin
+<s> [webpack.Progress] 9% setup compilation URLPlugin
+<s> [webpack.Progress] 9% setup compilation DefaultStatsFactoryPlugin
+<s> [webpack.Progress] 9% setup compilation DefaultStatsPresetPlugin
+<s> [webpack.Progress] 9% setup compilation DefaultStatsPrinterPlugin
+<s> [webpack.Progress] 9% setup compilation JavascriptMetaInfoPlugin
+<s> [webpack.Progress] 9% setup compilation EnsureChunkConditionsPlugin
+<s> [webpack.Progress] 9% setup compilation RemoveEmptyChunksPlugin
+<s> [webpack.Progress] 9% setup compilation MergeDuplicateChunksPlugin
+<s> [webpack.Progress] 9% setup compilation FlagIncludedChunksPlugin
+<s> [webpack.Progress] 9% setup compilation SideEffectsFlagPlugin
+<s> [webpack.Progress] 9% setup compilation FlagDependencyExportsPlugin
+<s> [webpack.Progress] 9% setup compilation FlagDependencyUsagePlugin
+<s> [webpack.Progress] 9% setup compilation InnerGraphPlugin
+<s> [webpack.Progress] 9% setup compilation MangleExportsPlugin
+<s> [webpack.Progress] 9% setup compilation ModuleConcatenationPlugin
+<s> [webpack.Progress] 9% setup compilation NoEmitOnErrorsPlugin
+<s> [webpack.Progress] 9% setup compilation RealContentHashPlugin
+<s> [webpack.Progress] 9% setup compilation WasmFinalizeExportsPlugin
+<s> [webpack.Progress] 9% setup compilation NamedModuleIdsPlugin
+<s> [webpack.Progress] 9% setup compilation DeterministicChunkIdsPlugin
+<s> [webpack.Progress] 9% setup compilation DefinePlugin
+<s> [webpack.Progress] 9% setup compilation TerserPlugin
+<s> [webpack.Progress] 9% setup compilation TemplatedPathPlugin
+<s> [webpack.Progress] 9% setup compilation RecordIdsPlugin
+<s> [webpack.Progress] 9% setup compilation WarnCaseSensitiveModulesPlugin
+<s> [webpack.Progress] 9% setup compilation IgnoreWarningsPlugin
+<s> [webpack.Progress] 9% setup compilation
+<s> [webpack.Progress] 10% building
+<s> [webpack.Progress] 10% building 0/1 entries 0/0 dependencies 0/0 modules
+<s> [webpack.Progress] 10% building 0/19 entries 1/19 dependencies 0/0 modules
+<s> [webpack.Progress] 10% building import loader ./node_modules/@angular-devkit/build-angular/src/babel/webpack-loader.js
+<s> [webpack.Progress] 10% building import loader ./node_modules/babel-loader/lib/index.js
+<s> [webpack.Progress] 10% building 0/19 entries 6/28 dependencies 0/6 modules
+<s> [webpack.Progress] 10% building import loader ./node_modules/mini-css-extract-plugin/dist/loader.js
+<s> [webpack.Progress] 10% building import loader ./node_modules/css-loader/dist/cjs.js
+<s> [webpack.Progress] 10% building import loader ./node_modules/postcss-loader/dist/cjs.js
+<s> [webpack.Progress] 10% building import loader ./node_modules/resolve-url-loader/index.js
+<s> [webpack.Progress] 10% building import loader ./node_modules/sass-loader/dist/cjs.js
+<s> [webpack.Progress] 10% building 0/19 entries 6/28 dependencies 0/6 modules
+<s> [webpack.Progress] 10% building import loader ./node_modules/@ngtools/webpack/src/ivy/index.js
+<s> [webpack.Progress] 10% building 0/19 entries 6/29 dependencies 0/6 modules
+<s> [webpack.Progress] 10% building 0/19 entries 21/29 dependencies 0/20 modules
+<s> [webpack.Progress] 10% building 0/19 entries 76/107 dependencies 0/49 modules
+<s> [webpack.Progress] 12% building 1/19 entries 299/347 dependencies 13/151 modules
+<s> [webpack.Progress] 12% building 1/19 entries 445/607 dependencies 33/178 modules
+<s> [webpack.Progress] 12% building import loader ./node_modules/@mdx-js/loader/index.js
+<s> [webpack.Progress] 12% building 1/19 entries 541/609 dependencies 42/203 modules
+<s> [webpack.Progress] 12% building import loader ./node_modules/@storybook/source-loader/dist/cjs/index.js
+<s> [webpack.Progress] 12% building 1/19 entries 562/609 dependencies 42/215 modules
+<s> [webpack.Progress] 12% building 1/19 entries 600/822 dependencies 44/238 modules
+<s> [webpack.Progress] 15% building 2/19 entries 857/995 dependencies 52/297 modules
+<s> [webpack.Progress] 18% building 3/19 entries 931/999 dependencies 66/315 modules
+[BABEL] Note: The code generator has deoptimised the styling of /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/node_modules/prettier/standalone.js as it exceeds the max of 500KB.
+<s> [webpack.Progress] 18% building 3/19 entries 1141/1200 dependencies 107/360 modules
+<s> [webpack.Progress] 18% building 3/19 entries 1500/1565 dependencies 137/399 modules
+<s> [webpack.Progress] 21% building 4/19 entries 1647/1713 dependencies 223/408 modules
+<s> [webpack.Progress] 21% building 4/19 entries 2000/2055 dependencies 281/490 modules
+<s> [webpack.Progress] 21% building 4/19 entries 2200/2584 dependencies 303/545 modules
+<s> [webpack.Progress] 21% building 4/19 entries 2843/3500 dependencies 358/752 modules
+<s> [webpack.Progress] 21% building 4/19 entries 3300/3867 dependencies 363/1162 modules
+<s> [webpack.Progress] 21% building 4/19 entries 3800/3867 dependencies 363/1297 modules
+<s> [webpack.Progress] 21% building 4/19 entries 4324/4363 dependencies 400/1318 modules
+<s> [webpack.Progress] 21% building 4/19 entries 4758/4800 dependencies 518/1368 modules
+<s> [webpack.Progress] 21% building 4/19 entries 5200/5278 dependencies 782/1421 modules
+<s> [webpack.Progress] 21% building 4/19 entries 5273/5300 dependencies 798/1434 modules
+<s> [webpack.Progress] 21% building 4/19 entries 5360/5400 dependencies 868/1445 modules
+<s> [webpack.Progress] 22% building 4/19 entries 5733/5819 dependencies 1100/1477 modules
+<s> [webpack.Progress] 24% building 4/19 entries 6400/6488 dependencies 1321/1693 modules
+<s> [webpack.Progress] 25% building 4/19 entries 6691/6743 dependencies 1425/1800 modules
+<s> [webpack.Progress] 26% building 4/19 entries 6823/6900 dependencies 1480/1820 modules
+<s> [webpack.Progress] 28% building 4/19 entries 7367/7374 dependencies 1700/2053 modules
+<s> [webpack.Progress] 30% building 5/19 entries 7464/7575 dependencies 1852/2057 modules
+<s> [webpack.Progress] 30% building 6/19 entries 7464/7575 dependencies 1853/2057 modules
+<s> [webpack.Progress] 30% building 7/19 entries 7464/7575 dependencies 1854/2057 modules
+<s> [webpack.Progress] 33% building 8/19 entries 7464/7575 dependencies 1855/2057 modules
+<s> [webpack.Progress] 36% building 9/19 entries 7464/7575 dependencies 1856/2057 modules
+<s> [webpack.Progress] 38% building 10/19 entries 7464/7575 dependencies 1857/2057 modules
+<s> [webpack.Progress] 41% building 11/19 entries 7464/7575 dependencies 1858/2057 modules
+<s> [webpack.Progress] 44% building 12/19 entries 7464/7575 dependencies 1859/2057 modules
+<s> [webpack.Progress] 47% building 13/19 entries 7464/7575 dependencies 1860/2057 modules
+<s> [webpack.Progress] 50% building 14/19 entries 7464/7575 dependencies 1864/2057 modules
+<s> [webpack.Progress] 53% building 15/19 entries 7741/7825 dependencies 1985/2120 modules
+<s> [webpack.Progress] 56% building 16/19 entries 8043/8079 dependencies 2098/2176 modules
+<s> [webpack.Progress] 59% building 17/19 entries 8212/8212 dependencies 2194/2210 modules
+<s> [webpack.Progress] 62% building 18/19 entries 8222/8222 dependencies 2214/2215 modules
+<s> [webpack.Progress] 65% building 19/19 entries 8222/8222 dependencies 2215/2215 modules
+<s> [webpack.Progress] 65% building
+<s> [webpack.Progress] 69% building finish
+<s> [webpack.Progress] 69% building finish
+<s> [webpack.Progress] 70% sealing finish module graph
+<s> [webpack.Progress] 70% sealing finish module graph angular-compiler
+<s> [webpack.Progress] 70% sealing finish module graph ResolverCachePlugin
+<s> [webpack.Progress] 70% sealing finish module graph InferAsyncModulesPlugin
+<s> [webpack.Progress] 70% sealing finish module graph FlagDependencyExportsPlugin
+<s> [webpack.Progress] 70% sealing finish module graph InnerGraphPlugin
+<s> [webpack.Progress] 70% sealing finish module graph WasmFinalizeExportsPlugin
+<s> [webpack.Progress] 70% sealing finish module graph
+<s> [webpack.Progress] 70% sealing plugins
+<s> [webpack.Progress] 70% sealing plugins WarnCaseSensitiveModulesPlugin
+<s> [webpack.Progress] 70% sealing plugins
+<s> [webpack.Progress] 71% sealing dependencies optimization
+<s> [webpack.Progress] 71% sealing dependencies optimization SideEffectsFlagPlugin
+<s> [webpack.Progress] 71% sealing dependencies optimization FlagDependencyUsagePlugin
+<s> [webpack.Progress] 71% sealing dependencies optimization
+<s> [webpack.Progress] 71% sealing after dependencies optimization
+<s> [webpack.Progress] 71% sealing after dependencies optimization
+<s> [webpack.Progress] 72% sealing chunk graph
+<s> [webpack.Progress] 72% sealing chunk graph
+<s> [webpack.Progress] 73% sealing after chunk graph
+<s> [webpack.Progress] 73% sealing after chunk graph
+<s> [webpack.Progress] 73% sealing optimizing
+<s> [webpack.Progress] 73% sealing optimizing
+<s> [webpack.Progress] 74% sealing module optimization
+<s> [webpack.Progress] 74% sealing module optimization
+<s> [webpack.Progress] 75% sealing after module optimization
+<s> [webpack.Progress] 75% sealing after module optimization
+<s> [webpack.Progress] 75% sealing chunk optimization
+<s> [webpack.Progress] 75% sealing chunk optimization EnsureChunkConditionsPlugin
+<s> [webpack.Progress] 75% sealing chunk optimization RemoveEmptyChunksPlugin
+<s> [webpack.Progress] 75% sealing chunk optimization MergeDuplicateChunksPlugin
+<s> [webpack.Progress] 75% sealing chunk optimization SplitChunksPlugin
+<s> [webpack.Progress] 75% sealing chunk optimization RemoveEmptyChunksPlugin
+<s> [webpack.Progress] 75% sealing chunk optimization
+<s> [webpack.Progress] 76% sealing after chunk optimization
+<s> [webpack.Progress] 76% sealing after chunk optimization
+<s> [webpack.Progress] 77% sealing module and chunk tree optimization
+<s> [webpack.Progress] 77% sealing module and chunk tree optimization PersistentChildCompilerSingletonPlugin
+<s> [webpack.Progress] 77% sealing module and chunk tree optimization
+<s> [webpack.Progress] 77% sealing after module and chunk tree optimization
+<s> [webpack.Progress] 77% sealing after module and chunk tree optimization
+<s> [webpack.Progress] 78% sealing chunk modules optimization
+<s> [webpack.Progress] 78% sealing chunk modules optimization ModuleConcatenationPlugin
+<s> [webpack.Progress] 78% sealing chunk modules optimization
+<s> [webpack.Progress] 78% sealing after chunk modules optimization
+<s> [webpack.Progress] 78% sealing after chunk modules optimization
+<s> [webpack.Progress] 79% sealing module reviving
+<s> [webpack.Progress] 79% sealing module reviving RecordIdsPlugin
+<s> [webpack.Progress] 79% sealing module reviving
+<s> [webpack.Progress] 80% sealing before module ids
+<s> [webpack.Progress] 80% sealing before module ids
+<s> [webpack.Progress] 80% sealing module ids
+<s> [webpack.Progress] 80% sealing module ids NamedModuleIdsPlugin
+<s> [webpack.Progress] 80% sealing module ids
+<s> [webpack.Progress] 81% sealing module id optimization
+<s> [webpack.Progress] 81% sealing module id optimization
+<s> [webpack.Progress] 82% sealing module id optimization
+<s> [webpack.Progress] 82% sealing module id optimization
+<s> [webpack.Progress] 82% sealing chunk reviving
+<s> [webpack.Progress] 82% sealing chunk reviving RecordIdsPlugin
+<s> [webpack.Progress] 82% sealing chunk reviving
+<s> [webpack.Progress] 83% sealing before chunk ids
+<s> [webpack.Progress] 83% sealing before chunk ids
+<s> [webpack.Progress] 84% sealing chunk ids
+<s> [webpack.Progress] 84% sealing chunk ids DeterministicChunkIdsPlugin
+<s> [webpack.Progress] 84% sealing chunk ids
+<s> [webpack.Progress] 84% sealing chunk id optimization
+<s> [webpack.Progress] 84% sealing chunk id optimization FlagIncludedChunksPlugin
+<s> [webpack.Progress] 84% sealing chunk id optimization
+<s> [webpack.Progress] 85% sealing after chunk id optimization
+<s> [webpack.Progress] 85% sealing after chunk id optimization
+<s> [webpack.Progress] 86% sealing record modules
+<s> [webpack.Progress] 86% sealing record modules RecordIdsPlugin
+<s> [webpack.Progress] 86% sealing record modules
+<s> [webpack.Progress] 86% sealing record chunks
+<s> [webpack.Progress] 86% sealing record chunks RecordIdsPlugin
+<s> [webpack.Progress] 86% sealing record chunks
+<s> [webpack.Progress] 87% sealing module hashing
+<s> [webpack.Progress] 87% sealing module hashing
+<s> [webpack.Progress] 87% sealing code generation
+<s> [webpack.Progress] 87% sealing code generation
+<s> [webpack.Progress] 88% sealing runtime requirements
+<s> [webpack.Progress] 88% sealing runtime requirements
+<s> [webpack.Progress] 89% sealing hashing
+<s> [webpack.Progress] 89% sealing hashing
+<s> [webpack.Progress] 89% sealing after hashing
+<s> [webpack.Progress] 89% sealing after hashing
+<s> [webpack.Progress] 90% sealing record hash
+<s> [webpack.Progress] 90% sealing record hash
+<s> [webpack.Progress] 91% sealing module assets processing
+<s> [webpack.Progress] 91% sealing module assets processing
+<s> [webpack.Progress] 91% sealing chunk assets processing
+<s> [webpack.Progress] 91% sealing chunk assets processing
+<s> [webpack.Progress] 92% sealing asset processing
+<s> [webpack.Progress] 92% sealing asset processing copy-webpack-plugin
+<s> [webpack.Progress] 92% sealing asset processing PersistentChildCompilerSingletonPlugin
+<s> [webpack.Progress] 92% sealing asset processing TerserPlugin
+info => Manager built (43 s)
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.css generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.css generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.9b568f7b.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.9b568f7b.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin runtime~main.1801abd1.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin runtime~main.1801abd1.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 747.afc7ec4b.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 747.afc7ec4b.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 895.2a6c4cd8.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 895.2a6c4cd8.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 459.3643cf86.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 459.3643cf86.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 385.d11ebb52.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 385.d11ebb52.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 299.c66b6ef7.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 299.c66b6ef7.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 273.84fc0c13.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 273.84fc0c13.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 722.199ed417.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 722.199ed417.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 899.0c29a83d.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 899.0c29a83d.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 291.1270b768.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 291.1270b768.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 290.25b7403d.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 290.25b7403d.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin resolve sources
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin
+<s> [webpack.Progress] 92% sealing asset processing HtmlWebpackPlugin
+<s> [webpack.Progress] 92% sealing asset processing HtmlWebpackPlugin
+<s> [webpack.Progress] 92% sealing asset processing HtmlWebpackPlugin resolve sources
+<s> [webpack.Progress] 92% sealing asset processing HtmlWebpackPlugin
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin main.8e284452.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin main.8e284452.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin runtime~main.45350c6c.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin runtime~main.45350c6c.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 747.88777067.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 747.88777067.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 385.223a420f.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 385.223a420f.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 299.acd83dd0.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 299.acd83dd0.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 273.50c91b87.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 273.50c91b87.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 722.ec7b9fcd.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 722.ec7b9fcd.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 895.f68de39b.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 895.f68de39b.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 459.a5e8ebbc.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 459.a5e8ebbc.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 899.caed6f7e.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 899.caed6f7e.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 291.b946a219.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 291.b946a219.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 290.bce7b927.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 290.bce7b927.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin resolve sources
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin
+<s> [webpack.Progress] 92% sealing asset processing AnyComponentStyleBudgetChecker
+<s> [webpack.Progress] 92% sealing asset processing
+<s> [webpack.Progress] 93% sealing after asset optimization
+<s> [webpack.Progress] 93% sealing after asset optimization
+<s> [webpack.Progress] 93% sealing recording
+<s> [webpack.Progress] 93% sealing recording
+<s> [webpack.Progress] 94% sealing after seal
+<s> [webpack.Progress] 94% sealing after seal
+<s> [webpack.Progress] 95% emitting emit
+<s> [webpack.Progress] 95% emitting emit
+<s> [webpack.Progress] 98% emitting after emit
+<s> [webpack.Progress] 98% emitting after emit SizeLimitsPlugin
+<s> [webpack.Progress] 98% emitting after emit
+<s> [webpack.Progress] 99% done plugins
+<s> [webpack.Progress] 99% done plugins CaseSensitivePathsPlugin
+<s> [webpack.Progress] 99% done plugins
+<s> [webpack.Progress] 99% 
+
+<s> [webpack.Progress] 99% cache store build dependencies
+<s> [webpack.Progress] 99% cache store build dependencies
+<s> [webpack.Progress] 99% cache begin idle
+<s> [webpack.Progress] 99% cache begin idle
+<s> [webpack.Progress] 100% 
+
+info => Preview built (53 s)
+WARN /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/app/app-routing.module.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/app/app.component.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/app/app.module.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/environments/environment.prod.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/environments/environment.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN /Users/nannabachmunkholm/Desktop/Projects/AngularComponents/base-project/base-project/src/main.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+WARN This can impact web performance.
+WARN Assets: 
+WARN   459.a5e8ebbc.iframe.bundle.js (587 KiB)
+WARN   290.bce7b927.iframe.bundle.js (3.63 MiB)
+WARN entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+WARN Entrypoints:
+WARN   main (3.72 MiB)
+WARN       runtime~main.45350c6c.iframe.bundle.js
+WARN       290.bce7b927.iframe.bundle.js
+WARN       main.css
+WARN       main.8e284452.iframe.bundle.js
+WARN 
+<s> [webpack.Progress] 99% cache shutdown
+<s> [webpack.Progress] 99% cache shutdown
+<s> [webpack.Progress] 100% 
+
+info => Output directory: /var/folders/br/9r2kkygx6bl21q13qjvg_6_c0000gn/T/chromatic--50894-zl4BSUllcSOL

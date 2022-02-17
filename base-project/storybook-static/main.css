@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url('Poppins-Regular.ttf') format("truetype");
+}
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url('Poppins-SemiBold.ttf') format("truetype");
+}
+@layer base {
+  h1, .h1 {
+    font-family: Poppins-SemiBold;
+    font-style: normal;
+    font-size: 68px;
+    line-height: 102px;
+  }
+
+  h2, .h2 {
+    font-family: Poppins-SemiBold;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  h3, .h3 {
+    font-family: Poppins-SemiBold;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:root {
+  --primary-orange: #FF6600;
+  --primary-dark: #445866;
+  --secondary-blue: #D5E3EB;
+  --secondary-blue-dark: #97BDD3;
+  --secondary-orange: #F2D2BB;
+  --secondary-orange-dark: #DFAB86;
+  --secondary-green: #CEDED6;
+  --secondary-green-dark: #445866;
+  --dark-80: rgba(86,97,104,80%);
+  --dark-60: rgba(128,137,142,60%);
+  --dark-40: rgba(171,176,179,40%);
+  --white: rgba(255,255,255,100%);
+  --white-80: rgba(255,255,255,80%);
+  --white-60: rgba(255,255,255,60%);
+  --white-40: rgba(255,255,255,40%);
+}
+body {
+  font-family: Poppins;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
+.subtitle {
+  font-family: Poppins;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 36px;
+}
+.bold {
+  font-family: Poppins-SemiBold;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
+.button-M {
+  font-family: Poppins-SemiBold;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+.button-S {
+  font-family: Poppins-SemiBold;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+label {
+  font-family: Poppins-SemiBold;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: var(--dark-60);
+}
+input {
+  border: none;
+  font-family: Poppins;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  padding-right: 10px;
+}

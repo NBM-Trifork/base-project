@@ -1,0 +1,32 @@
+<form [formGroup]="registrationForm" class="registrationForm">
+   
+    <div class="formfield">
+        <label for="name">Name</label>
+        <input id="name" type="text" formControlName="name">
+    </div>
+    <div class="formfield formfield--middle">
+        <label for="email">Email</label>
+        <input id="email" type="email" formControlName="email" required >
+    </div>
+    <div class="formfield formfield--middle">
+        <label for="phoneNumber">Phone Number</label>
+        <input id="phoneNumber" type="tel" formControlName="phoneNumber">
+    </div>
+    <div class="formfield formfield--middle">
+        <label for="message">Message</label>
+        <input id="message" type="textarea" formControlName="message">
+    </div>
+    <div class="row">
+        <div class="checkbox">
+            <input id="privacy" type="checkbox" formControlName="privacy">
+            <label for="privacy">I agree to the privacy policy</label>
+        </div>
+        <app-button
+        size="medium"
+        [primary]="true"
+        (onClick)="onSubmit()"
+        label="Submit"
+      ></app-button>
+    </div>
+    
+</form>
