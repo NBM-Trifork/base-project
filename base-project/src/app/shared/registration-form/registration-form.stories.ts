@@ -15,24 +15,28 @@ export default {
       declarations: [ButtonComponent],
       imports: [CommonModule, ReactiveFormsModule],
     }),
-    componentWrapperDecorator((story) => `<div style="margin: 3em">${story}</div>`)
+    componentWrapperDecorator(
+      (story) => `<div style="margin: 3em">${story}</div>`
+    ),
   ],
 } as Meta;
 
-const Template: Story<RegistrationFormComponent> = (args: RegistrationFormComponent) => ({
+const Template: Story<RegistrationFormComponent> = (
+  args: RegistrationFormComponent
+) => ({
   props: args,
 });
 
 export const FilledForm = Template.bind({});
 
 FilledForm.play = async () => {
-    const nameInput = screen.getByLabelText('Name', {
-        selector: 'input',
-      });
-    
-      await userEvent.type(nameInput, 'Jane Doe', {
-        delay: 100,
-      });
+  const nameInput = screen.getByLabelText('Name', {
+    selector: 'input',
+  });
+
+  await userEvent.type(nameInput, 'Nanna', {
+    delay: 100,
+  });
   const emailInput = screen.getByLabelText('Email', {
     selector: 'input',
   });
@@ -61,7 +65,7 @@ FilledForm.play = async () => {
     selector: 'input',
   });
 
-  await userEvent.type(privacyInput,"true", {
+  await userEvent.type(privacyInput, 'true', {
     delay: 100,
   });
 

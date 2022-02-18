@@ -7,6 +7,9 @@
     cursor: pointer;
     display: inline-block;
   }
+  .button:focus{
+    outline: none;
+  }
 
   .button--primary {
     color: var(--primary-orange);

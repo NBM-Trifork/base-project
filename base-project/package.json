@@ -12,8 +12,7 @@
     "storybook-docs": "start-storybook --docs --no-manager-cache",
     "build-storybook": "npm run docs:json && build-storybook",
     "build-storybook-docs": "build-storybook --docs",
-    "publish-storybook": "npx chromatic --project-token=3b118dbb2743",
-    "chromatic": "npx chromatic --project-token=3b118dbb2743"
+    "chromatic": "npx chromatic --project-token=CHROMATIC_PROJECT_TOKEN --exit-zero-on-changes"
   },
   "private": true,
   "dependencies": {

@@ -9,7 +9,7 @@ import { Form, FormControl, FormGroup, Validators } from '@angular/forms';
 export class RegistrationFormComponent implements OnInit {
   registrationForm = new FormGroup({
     name: new FormControl(''),
-    email: new FormControl('', Validators.email),
+    email: new FormControl('', [Validators.required, Validators.email]),
     phoneNumber: new FormControl(''),
     message: new FormControl(''),
     privacy: new FormControl(false, Validators.requiredTrue),
@@ -19,6 +19,7 @@ export class RegistrationFormComponent implements OnInit {
   ngOnInit(): void {}
 
   public onSubmit() {
+
     if (this.registrationForm.valid) {
       alert('Success');
     }

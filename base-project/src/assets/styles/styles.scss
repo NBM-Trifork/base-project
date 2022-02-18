@@ -27,14 +27,14 @@
 }
 
 body {
-    font-family: Poppins;
+    font-family: Poppins-Regular;
     font-style: normal;
     font-size: 14px;
     line-height: 20px;
 }
 
 .subtitle {
-    font-family: Poppins;
+    font-family: Poppins-Regular;
     font-style: normal;
     font-size: 24px;
     line-height: 36px;
@@ -71,9 +71,12 @@ label {
 
 input {
     border: none;
-    font-family: Poppins;
+    font-family: Poppins-Regular;
     font-style: normal;
     font-size: 14px;
     line-height: 20px;
     padding-right: 10px;
+}
+input:focus{
+    outline: none;
 }
