@@ -1,5 +1,5 @@
-<form [formGroup]="registrationForm" class="registrationForm">
-   
+<form [formGroup]="registrationForm" (ngSubmit)="onSubmit()" class="registrationForm">
+
     <div class="formfield">
         <label for="name">Name</label>
         <input id="name" type="text" formControlName="name">
@@ -7,6 +7,14 @@
     <div class="formfield formfield--middle">
         <label for="email">Email</label>
         <input id="email" type="email" formControlName="email" required >
+    </div>
+    <div *ngIf="registrationForm.controls['email'].invalid && (registrationForm.controls['email'].dirty || registrationForm.controls['email'].touched)" class="alert">
+        <div *ngIf="registrationForm.controls['email'].hasError('required')">
+        Please enter email
+      </div>
+      <div *ngIf="registrationForm.controls['email'].hasError('email')">
+        Please enter valid email
+      </div>
     </div>
     <div class="formfield formfield--middle">
         <label for="phoneNumber">Phone Number</label>
@@ -21,12 +29,13 @@
             <input id="privacy" type="checkbox" formControlName="privacy">
             <label for="privacy">I agree to the privacy policy</label>
         </div>
-        <app-button
+       <app-button type="submit"
         size="medium"
         [primary]="true"
         (onClick)="onSubmit()"
         label="Submit"
       ></app-button>
+       
     </div>
     
 </form>
