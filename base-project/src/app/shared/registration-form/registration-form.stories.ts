@@ -15,10 +15,13 @@ export default {
       declarations: [ButtonComponent],
       imports: [CommonModule, ReactiveFormsModule],
     }),
-    componentWrapperDecorator(
-      (story) => `<div style="margin: 3em">${story}</div>`
-    ),
+    // componentWrapperDecorator(
+    //   (story) => `<div style="margin: 3em">${story}</div>`
+    // ),
   ],
+  parameters: {
+    layout: 'centered',
+  },
 } as Meta;
 
 const Template: Story<RegistrationFormComponent> = (
@@ -66,6 +69,54 @@ FilledForm.play = async () => {
   });
 
   await userEvent.type(privacyInput, 'true', {
+    delay: 100,
+  });
+
+  const Submit = screen.getByRole('button');
+
+  await userEvent.click(Submit);
+};
+
+
+export const InvalidForm = Template.bind({});
+
+InvalidForm.play = async () => {
+  const nameInput = screen.getByLabelText('Name', {
+    selector: 'input',
+  });
+
+  await userEvent.type(nameInput, 'Nanna', {
+    delay: 100,
+  });
+  const emailInput = screen.getByLabelText('Email', {
+    selector: 'input',
+  });
+
+  await userEvent.type(emailInput, 'example-email', {
+    delay: 100,
+  });
+
+  const phoneNumberInput = screen.getByLabelText('Phone Number', {
+    selector: 'input',
+  });
+
+  await userEvent.type(phoneNumberInput, 'not a phone numner', {
+    delay: 100,
+  });
+
+  const messageInput = screen.getByLabelText('Message', {
+    selector: 'input',
+  });
+
+  await userEvent.type(messageInput, 'Jeg er interesseret i et job', {
+    delay: 100,
+  });
+
+  const privacyInput = screen.getByLabelText('I agree to the privacy policy', {
+    selector: 'input',
+  });
+
+  await userEvent.type(privacyInput, 'false', {
     delay: 100,
   });
 

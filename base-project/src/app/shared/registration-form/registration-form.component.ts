@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Form, FormControl, FormGroup, Validators } from '@angular/forms';
+
+import { Contact } from '../models/Contact';
 
 @Component({
   selector: 'app-registration-form',
@@ -14,6 +16,7 @@ export class RegistrationFormComponent implements OnInit {
     message: new FormControl(''),
     privacy: new FormControl(false, Validators.requiredTrue),
   });
+  @Output() loggedIn = new EventEmitter<Contact>();
   constructor() {}
 
   ngOnInit(): void {}
@@ -21,6 +24,14 @@ export class RegistrationFormComponent implements OnInit {
   public onSubmit() {
 
     if (this.registrationForm.valid) {
+      var contact: Contact = (
+        this.registrationForm.value.name,
+        this.registrationForm.value.email,
+        this.registrationForm.value.phoneNumber,
+        this.registrationForm.value.message,
+        this.registrationForm.value.privacy
+      );
+      this.loggedIn.emit(contact);
       alert('Success');
     }
     alert('Error');

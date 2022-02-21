@@ -12,7 +12,7 @@
     "storybook-docs": "start-storybook --docs --no-manager-cache",
     "build-storybook": "npm run docs:json && build-storybook",
     "build-storybook-docs": "build-storybook --docs",
-    "chromatic": "npx chromatic --project-token=CHROMATIC_PROJECT_TOKEN --exit-zero-on-changes"
+    "chromatic": "npx chromatic --project-token=3b118dbb2743 --exit-zero-on-changes"
   },
   "private": true,
   "dependencies": {
@@ -43,7 +43,9 @@
     "@storybook/angular": "^6.4.19",
     "@storybook/builder-webpack5": "^6.4.19",
     "@storybook/manager-webpack5": "^6.4.19",
+    "@storybook/testing-angular": "^0.0.12",
     "@storybook/testing-library": "^0.0.9",
+    "@testing-library/angular": "^11.0.2",
     "@types/jasmine": "~3.10.0",
     "@types/node": "^12.11.1",
     "babel-loader": "^8.2.3",
