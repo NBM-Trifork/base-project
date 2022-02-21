@@ -2,13 +2,72 @@
     "pipes": [],
     "interfaces": [
         {
+            "name": "Contact",
+            "id": "interface-Contact-77072ce8e0b68c72ae3d07d4dcf4d882404a8947fe6867f4426d920cb43c82b81d6c11c0ff1e866b5e3a9414353d4570c281bd4fe71596496adb6e2f2c90a026",
+            "file": "src/app/shared/models/Contact.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface Contact {\n    name?: string,\n    email: string,\n    phoneNumber?: number;\n    message?: string,\n    privacy: boolean\n}",
+            "properties": [
+                {
+                    "name": "email",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 3
+                },
+                {
+                    "name": "message",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 5
+                },
+                {
+                    "name": "name",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 2
+                },
+                {
+                    "name": "phoneNumber",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": true,
+                    "description": "",
+                    "line": 4
+                },
+                {
+                    "name": "privacy",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "optional": false,
+                    "description": "",
+                    "line": 6
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        },
+        {
             "name": "User",
-            "id": "interface-User-2808ce81c57ab2c1d0422ab490bfdf5bd41d085b6c953275cc74879ce566c2a72ee7b9be54b4107c9773b4e83ce6f7acb947e2139a2be8d3c2da637bd15ec7d4",
+            "id": "interface-User-5243eb30371b1b8651d35fe87fdca701e01115f8c694531c296c4e3a54b174fc457ff4997f4a82fc2f216c32447b2a8c56aa6c69ea6547d9b3f91613a2a3c39f",
             "file": "src/app/shared/models/User.ts",
             "deprecated": false,
             "deprecationMessage": "",
             "type": "interface",
-            "sourceCode": "export interface User {\n    name: string\n}\n",
+            "sourceCode": "export interface User {\n    name: string\n}",
             "properties": [
                 {
                     "name": "name",
@@ -445,7 +504,7 @@
         },
         {
             "name": "RegistrationFormComponent",
-            "id": "component-RegistrationFormComponent-de4072ce3cd52157e5a09de800f2adc383c84e6d9514730a5657c00fc258010d509da5831da27229d72cd4cd753717c52dc1f500bfb0207753ad14cf40d00eee",
+            "id": "component-RegistrationFormComponent-2abe9764d05c25cc5fdfc18e0579f490479ea0dabe035ded6fb01d0143049dee03606ecef4cd5ed0c952bd5f418c472f768054fccb291efa84a393c273424346",
             "file": "src/app/shared/registration-form/registration-form.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -462,7 +521,16 @@
             ],
             "viewProviders": [],
             "inputsClass": [],
-            "outputsClass": [],
+            "outputsClass": [
+                {
+                    "name": "loggedIn",
+                    "defaultValue": "new EventEmitter<Contact>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 19,
+                    "type": "EventEmitter"
+                }
+            ],
             "propertiesClass": [
                 {
                     "name": "registrationForm",
@@ -472,7 +540,7 @@
                     "type": "",
                     "optional": false,
                     "description": "",
-                    "line": 10
+                    "line": 12
                 }
             ],
             "methodsClass": [
@@ -482,7 +550,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 19,
+                    "line": 22,
                     "deprecated": false,
                     "deprecationMessage": ""
                 },
@@ -492,7 +560,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 21,
+                    "line": 24,
                     "deprecated": false,
                     "deprecationMessage": "",
                     "modifierKind": [
@@ -507,7 +575,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, OnInit } from '@angular/core';\nimport { Form, FormControl, FormGroup, Validators } from '@angular/forms';\n\n@Component({\n  selector: 'app-registration-form',\n  templateUrl: './registration-form.component.html',\n  styleUrls: ['./registration-form.component.scss'],\n})\nexport class RegistrationFormComponent implements OnInit {\n  registrationForm = new FormGroup({\n    name: new FormControl(''),\n    email: new FormControl('', [Validators.required, Validators.email]),\n    phoneNumber: new FormControl(''),\n    message: new FormControl(''),\n    privacy: new FormControl(false, Validators.requiredTrue),\n  });\n  constructor() {}\n\n  ngOnInit(): void {}\n\n  public onSubmit() {\n\n    if (this.registrationForm.valid) {\n      alert('Success');\n    }\n    alert('Error');\n  }\n}\n",
+            "sourceCode": "import { Component, EventEmitter, OnInit, Output } from '@angular/core';\nimport { Form, FormControl, FormGroup, Validators } from '@angular/forms';\n\nimport { Contact } from '../models/Contact';\n\n@Component({\n  selector: 'app-registration-form',\n  templateUrl: './registration-form.component.html',\n  styleUrls: ['./registration-form.component.scss'],\n})\nexport class RegistrationFormComponent implements OnInit {\n  registrationForm = new FormGroup({\n    name: new FormControl(''),\n    email: new FormControl('', [Validators.required, Validators.email]),\n    phoneNumber: new FormControl(''),\n    message: new FormControl(''),\n    privacy: new FormControl(false, Validators.requiredTrue),\n  });\n  @Output() loggedIn = new EventEmitter<Contact>();\n  constructor() {}\n\n  ngOnInit(): void {}\n\n  public onSubmit() {\n\n    if (this.registrationForm.valid) {\n      var contact: Contact = (\n        this.registrationForm.value.name,\n        this.registrationForm.value.email,\n        this.registrationForm.value.phoneNumber,\n        this.registrationForm.value.message,\n        this.registrationForm.value.privacy\n      );\n      this.loggedIn.emit(contact);\n      alert('Success');\n    }\n    alert('Error');\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -522,12 +590,12 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "args": [],
-                "line": 16
+                "line": 19
             },
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<form [formGroup]=\"registrationForm\" (ngSubmit)=\"onSubmit()\" class=\"registrationForm\">\n\n    <div class=\"formfield\">\n        <label for=\"name\">Name</label>\n        <input id=\"name\" type=\"text\" formControlName=\"name\">\n    </div>\n    <div class=\"formfield formfield--middle\">\n        <label for=\"email\">Email</label>\n        <input id=\"email\" type=\"email\" formControlName=\"email\" required >\n    </div>\n    <div *ngIf=\"registrationForm.controls['email'].invalid && (registrationForm.controls['email'].dirty || registrationForm.controls['email'].touched)\" class=\"alert\">\n        <div *ngIf=\"registrationForm.controls['email'].hasError('required')\">\n        Please enter email\n      </div>\n      <div *ngIf=\"registrationForm.controls['email'].hasError('email')\">\n        Please enter valid email\n      </div>\n    </div>\n    <div class=\"formfield formfield--middle\">\n        <label for=\"phoneNumber\">Phone Number</label>\n        <input id=\"phoneNumber\" type=\"tel\" formControlName=\"phoneNumber\">\n    </div>\n    <div class=\"formfield formfield--middle\">\n        <label for=\"message\">Message</label>\n        <input id=\"message\" type=\"textarea\" formControlName=\"message\">\n    </div>\n    <div class=\"row\">\n        <div class=\"checkbox\">\n            <input id=\"privacy\" type=\"checkbox\" formControlName=\"privacy\">\n            <label for=\"privacy\">I agree to the privacy policy</label>\n        </div>\n       <app-button type=\"submit\"\n        size=\"medium\"\n        [primary]=\"true\"\n        (onClick)=\"onSubmit()\"\n        label=\"Submit\"\n      ></app-button>\n       \n    </div>\n    \n</form>\n"
+            "templateData": "<form [formGroup]=\"registrationForm\" (ngSubmit)=\"onSubmit()\" class=\"registrationForm\" id=\"registrationForm\">\n\n    <div class=\"formfield\">\n        <label for=\"name\">Name</label>\n        <input id=\"name\" type=\"text\" formControlName=\"name\">\n    </div>\n    <div class=\"formfield formfield--middle\">\n        <label for=\"email\">Email</label>\n        <input id=\"email\" type=\"email\" formControlName=\"email\" required >\n    </div>\n    <div *ngIf=\"registrationForm.controls['email'].invalid && (registrationForm.controls['email'].dirty || registrationForm.controls['email'].touched)\" class=\"alert\">\n        <div *ngIf=\"registrationForm.controls['email'].hasError('required')\">\n        Please enter email\n      </div>\n      <div *ngIf=\"registrationForm.controls['email'].hasError('email')\">\n        Please enter valid email\n      </div>\n    </div>\n    <div class=\"formfield formfield--middle\">\n        <label for=\"phoneNumber\">Phone Number</label>\n        <input id=\"phoneNumber\" type=\"tel\" formControlName=\"phoneNumber\">\n    </div>\n    <div class=\"formfield formfield--middle\">\n        <label for=\"message\">Message</label>\n        <input id=\"message\" type=\"textarea\" formControlName=\"message\">\n    </div>\n    <div class=\"row\">\n        <div class=\"checkbox\">\n            <input id=\"privacy\" type=\"checkbox\" formControlName=\"privacy\">\n            <label for=\"privacy\">I agree to the privacy policy</label>\n        </div>\n       <app-button type=\"submit\"\n        size=\"medium\"\n        [primary]=\"true\"\n        (onClick)=\"onSubmit()\"\n        label=\"Submit\"\n      ></app-button>\n       \n    </div>\n    \n</form>\n"
         }
     ],
     "modules": [
@@ -671,6 +739,16 @@
                 "defaultValue": "Template.bind({})"
             },
             {
+                "name": "InvalidForm",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/shared/registration-form/registration-form.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
                 "name": "LoggedIn",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -773,21 +851,21 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/shared/components/header/Header.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<HeaderComponent>",
-                "defaultValue": "(args: HeaderComponent) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/app/shared/components/button/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<ButtonComponent>",
                 "defaultValue": "(args: ButtonComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/shared/components/header/Header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<HeaderComponent>",
+                "defaultValue": "(args: HeaderComponent) => ({\n  props: args,\n})"
             }
         ],
         "functions": [],
@@ -842,6 +920,16 @@
             "src/app/shared/registration-form/registration-form.stories.ts": [
                 {
                     "name": "FilledForm",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/shared/registration-form/registration-form.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "InvalidForm",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/app/shared/registration-form/registration-form.stories.ts",
@@ -1127,6 +1215,15 @@
                 "status": "low"
             },
             {
+                "filePath": "src/app/shared/models/Contact.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "Contact",
+                "coveragePercent": 0,
+                "coverageCount": "0/6",
+                "status": "low"
+            },
+            {
                 "filePath": "src/app/shared/models/User.ts",
                 "type": "interface",
                 "linktype": "interface",
@@ -1141,7 +1238,7 @@
                 "linktype": "component",
                 "name": "RegistrationFormComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/5",
+                "coverageCount": "0/6",
                 "status": "low"
             },
             {
@@ -1150,6 +1247,16 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "FilledForm",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/shared/registration-form/registration-form.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "InvalidForm",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
