@@ -2,6 +2,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { ButtonComponent } from './shared/components/button/button.component';
+import { GsapIntroductionComponent } from './modules/gsap-introduction/gsap-introduction.component';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { NgModule } from '@angular/core';
 import { PageComponent } from './modules/page/page.component';
@@ -14,12 +15,13 @@ import { RegistrationFormComponent } from './shared/registration-form/registrati
     ButtonComponent,
     HeaderComponent,
     PageComponent,
-    RegistrationFormComponent
+    RegistrationFormComponent,
+    GsapIntroductionComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

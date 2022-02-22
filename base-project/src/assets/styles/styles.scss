@@ -31,6 +31,9 @@ body {
     font-style: normal;
     font-size: 14px;
     line-height: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: var(-secondary-blue);
 }
 
 .subtitle {
@@ -38,6 +41,7 @@ body {
     font-style: normal;
     font-size: 24px;
     line-height: 36px;
+    text-transform: uppercase;
 }
 
 .bold {
