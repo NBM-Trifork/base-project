@@ -1,0 +1,35 @@
+<div class="flex">
+  <header #header class="header">
+    <h1>{{ title }}</h1>
+    <app-button
+      label="Watch here"
+      [primary]="true"
+      id="cta"
+      (clickEvent)="clickButton($event)"
+    ></app-button>
+  </header>
+
+  <section #firstSection class="panel">
+    <img class="image0" id="cookie" src="../../../assets/images/cookie.svg" />
+    <p class="firstP">GSAP is nice for making smart animation to your projects.</p>
+    <div class="box"></div>
+  </section>
+</div>
+
+<div class="flex section2">
+    <div class="section2-text">
+        <div class="subtitle">Static subtitle</div>
+        <p>LET this text be static on scroll</p>
+    </div>
+  
+    <section class="panel2">
+      <img class="image1" src="../../../assets/images/cookie.svg" />
+      <img class="image2" src="../../../assets/images/cookie.svg" />
+      <!-- <img class="image1" src="../../../assets/images/cookie.svg" /> -->
+    </section>
+  </div>
+
+  <div class="flex">
+
+  </div>
+
