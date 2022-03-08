@@ -132,7 +132,7 @@
         },
         {
             "name": "ButtonComponent",
-            "id": "component-ButtonComponent-c88ccd91212b5d30360f1513cfb225e70e1c6bb2a2e3ca24e922adc74e716d54af487636fd5bf51025470ab954413115d313046a6d88e1d59a5f1fa7931c51fd",
+            "id": "component-ButtonComponent-af7d8806e23dd0db5a60e972503c7cdf9a4557f5782a007dd38f5630ec96712adf0bac8a3fcff1ea1236d0b99004a617798652eadd02b6fc29aeb6fe4f33e612",
             "file": "src/app/shared/components/button/button.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -155,7 +155,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 14,
-                    "type": "any",
+                    "type": "() => any",
                     "decorators": []
                 },
                 {
@@ -247,7 +247,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';\n\n@Component({\n  selector: 'app-button',\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.scss']\n})\nexport class ButtonComponent implements OnInit {\n  @Input() label: string = \"press\";\n  @Input()\n  primary: boolean = false;\n  @Input()\n  size: 'small' | 'medium' = 'medium';\n  @Input() clickAction: any = ()=> console.log(\"clicked\");\n  @Output() clickEvent: EventEmitter<any>= new EventEmitter();\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n  public onClick(event: any){\n    this.clickAction();\n    this.clickEvent.emit(event);\n  }\n\n\n  public get classes(): string[] {\n    const mode = this.primary ? 'button--primary' : 'button--secondary';\n\n    return ['button', `button--${this.size}`, mode];\n  }\n}\n",
+            "sourceCode": "import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';\n\n@Component({\n  selector: 'app-button',\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.scss']\n})\nexport class ButtonComponent implements OnInit {\n  @Input() label: string = \"press\";\n  @Input()\n  primary: boolean = false;\n  @Input()\n  size: 'small' | 'medium' = 'medium';\n  @Input() clickAction = ()=> console.log(\"clicked\");\n  @Output() clickEvent: EventEmitter<any>= new EventEmitter();\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n  public onClick(event: any){\n    this.clickAction();\n    this.clickEvent.emit(event);\n  }\n\n\n  public get classes(): string[] {\n    const mode = this.primary ? 'button--primary' : 'button--secondary';\n\n    return ['button', `button--${this.size}`, mode];\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -282,7 +282,7 @@
         },
         {
             "name": "GsapIntroductionComponent",
-            "id": "component-GsapIntroductionComponent-366761a5e93829c7c9dd70feff9ae9ac0dd535a43e1fdeeb7b9e6a586c1e4abc8c3af6add889a453e344f3ab416ebfee0b7aff2d45a7de7a4adcf48771248df1",
+            "id": "component-GsapIntroductionComponent-42ac3751e2092b28fbf3a0148815905a9ba344d13586fdfff54f8beecb20213fb048438fdbcdfe62eeb8f75fab37490bc5a1306858def9b26fc377bbf415d02d",
             "file": "src/app/modules/gsap-introduction/gsap-introduction.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -298,7 +298,35 @@
                 "./gsap-introduction.component.html"
             ],
             "viewProviders": [],
-            "inputsClass": [],
+            "inputsClass": [
+                {
+                    "name": "boxEase",
+                    "defaultValue": "'elastic.out(1, 0.3)'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 29,
+                    "type": "\"back.out(1.7)\" | \"Circ.easeOut\" | \"elastic.out(1, 0.3)\"",
+                    "decorators": []
+                },
+                {
+                    "name": "cookieEase",
+                    "defaultValue": "'back.out(1.7)'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 25,
+                    "type": "\"back.out(1.7)\" | \"Circ.easeOut\" | \"elastic.out(1, 0.3)\"",
+                    "decorators": []
+                },
+                {
+                    "name": "panelEase",
+                    "defaultValue": "'Circ.easeOut'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 23,
+                    "type": "\"back.out(1.7)\" | \"Circ.easeOut\" | \"elastic.out(1, 0.3)\"",
+                    "decorators": []
+                }
+            ],
             "outputsClass": [],
             "propertiesClass": [
                 {
@@ -309,13 +337,23 @@
                     "type": "string",
                     "optional": false,
                     "description": "",
-                    "line": 18,
+                    "line": 22,
                     "modifierKind": [
                         123
                     ]
                 }
             ],
             "methodsClass": [
+                {
+                    "name": "animationOnScroll",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 61,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
                 {
                     "name": "clickButton",
                     "args": [
@@ -329,7 +367,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 25,
+                    "line": 38,
                     "deprecated": false,
                     "deprecationMessage": "",
                     "jsdoctags": [
@@ -350,7 +388,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 22,
+                    "line": 33,
                     "deprecated": false,
                     "deprecationMessage": ""
                 }
@@ -362,11 +400,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { DOCUMENT } from '@angular/common';\nimport {\n  Component,\n  ElementRef,\n  Inject,\n  OnInit,\n  ViewChild,\n} from '@angular/core';\n\nimport { gsap } from 'gsap';\n\n@Component({\n  selector: 'app-gsap-introduction',\n  templateUrl: './gsap-introduction.component.html',\n  styleUrls: ['./gsap-introduction.component.scss'],\n})\nexport class GsapIntroductionComponent implements OnInit {\n  public title = 'gsap introduction';\n\n  constructor(@Inject(DOCUMENT) private document: Document) {}\n\n  ngOnInit() {\n  }\n\n  clickButton(event: any){\n      gsap.to(\".panel\", {duration: 1.5, scaleY: 1, height: '100vh', ease: 'Circ.easeOut'})\n      gsap.to(\"#cookie\", {duration: 1, opacity: 1, y:0})\n  }\n\n}",
+            "sourceCode": "import { DOCUMENT } from '@angular/common';\nimport {\n  Component,\n  ElementRef,\n  Inject,\n  Input,\n  OnInit,\n  ViewChild,\n} from '@angular/core';\nimport ScrollTrigger from 'gsap/ScrollTrigger';\n\nimport { gsap } from 'gsap';\n\ngsap.registerPlugin(ScrollTrigger);\n\n@Component({\n  selector: 'app-gsap-introduction',\n  templateUrl: './gsap-introduction.component.html',\n  styleUrls: ['./gsap-introduction.component.scss'],\n})\nexport class GsapIntroductionComponent implements OnInit {\n  public title = 'gsap introduction';\n  @Input() panelEase: 'back.out(1.7)' | 'Circ.easeOut' | 'elastic.out(1, 0.3)' =\n    'Circ.easeOut';\n  @Input() cookieEase:\n    | 'back.out(1.7)'\n    | 'Circ.easeOut'\n    | 'elastic.out(1, 0.3)' = 'back.out(1.7)';\n  @Input() boxEase: 'back.out(1.7)' | 'Circ.easeOut' | 'elastic.out(1, 0.3)' =\n    'elastic.out(1, 0.3)';\n  constructor(@Inject(DOCUMENT) private document: Document) {}\n\n  ngOnInit() {\n    console.log(\"ScrollTrigger\", ScrollTrigger)\n    this.animationOnScroll();\n  }\n\n  clickButton(event: any) {\n    gsap.to('.panel', {\n      duration: 1.5,\n      scaleY: 1,\n      height: '100vh',\n      ease: this.panelEase,\n    });\n    gsap.to('#cookie', {\n      duration: 1,\n      opacity: 1,\n      y: 0,\n      delay: 1,\n      ease: this.cookieEase,\n    });\n    gsap.to('.firstP', {\n      duration: 1,\n      opacity: 1,\n      y: 20,\n      delay: 1.4,\n    });\n    gsap.to('.box', { duration: 4, scale: 1, opacity:1, ease: this.boxEase });\n  }\n\n  animationOnScroll(){\n    gsap.to(\".section2\", {\n      scrollTrigger: {\n        trigger: \".section2\",\n        scrub: true,\n        pin: true,\n        start: \"top top\",\n        end: \"+=500\",\n        toggleClass: \"active\",\n      },\n      duration: 1,\n      opacity: 1,\n      ease: \"power2\"\n    })\n    gsap.to(\".image1\", {\n      scrollTrigger: {\n        trigger: \".section2\",\n        scrub: true,\n        start: \"top bottom\",\n        end: \"bottom -300\",\n      },\n      duration: 1,\n      ease: this.panelEase,\n  \n    });\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".flex {\n    width: 100%;\n    height: 100vh;\n    display: grid;\n    grid-template-columns: repeat(2, 1fr);\n    justify-content: center;\n    align-items: center;\n    padding: 30px;\n}\n.header {\n  padding: 30px;\n  text-transform: uppercase;\n  text-align: left;\n}\n\n.section {\n  border-top: 1px solid var(--dark-40);\n  border-bottom: 1px solid var(--dark-40);\n  padding: 30px;\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n}\n\n.panel {\n    position: absolute;\n    width: 55%;\n    bottom: 0;\n    right: 0;\n    background-color: var(--secondary-orange-dark);\n    box-sizing: border-box;\n    padding: 15% 7%;\n    text-align: left;\n    display: grid;\n    align-items: center;\n    grid-template-columns: min-content 1fr;\n    transform: scaleY(0);\n    transform-origin: bottom;\n}\n\nimg {\n  width: 120px;\n  float: left;\n  margin-right: 50px;\n  opacity: 0;\n  transform: translateY(-200px);\n}\n\n\np {\n    line-height: 30px;\n    width: 25%;\n    opacity: 0;\n}\n\n.box {\n    border: 5px solid var(--dark-40);\n    width: 65%;\n    height: 40%;\n    position: absolute;\n    left: -7%;\n    z-index: -1;\n    opacity: 0;\n}",
+                    "data": ".flex {\n    width: 100%;\n    min-height: 100vh;\n    display: grid;\n    grid-template-columns: repeat(2, 1fr);\n    justify-content: center;\n    align-items: center;\n}\n.header {\n  padding: 30px;\n  text-transform: uppercase;\n  text-align: left;\n}\n\n.section {\n  border-top: 1px solid var(--dark-40);\n  border-bottom: 1px solid var(--dark-40);\n  padding: 30px;\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n}\n\n.panel {\n    position: absolute;\n    width: 55%;\n    bottom: 0;\n    right: 0;\n    background-color: var(--secondary-orange-dark);\n    box-sizing: border-box; \n    text-align: left;\n    display: grid;\n    align-items: center;\n    justify-content: center;\n    grid-template-columns: min-content auto;\n    transform: scaleY(0);\n    transform-origin: bottom;\n}\n\n.image0 {\n  width: 120px;\n  float: left;\n  margin-right: 50px;\n  opacity: 0;\n  transform: translateY(-200px);\n}\n\n.image0 {\n    float: left;\n    margin-right: 50px;\n    transform: translateY(-500px);\n  }\n\n\n.firstP {\n    line-height: 30px;\n    width: 60%;\n    opacity: 0;\n}\n\n.box {\n    border: 5px solid var(--secondary-orange);\n    width: 65%;\n    height: 40%;\n    position: absolute;\n    left: -7%;\n    z-index: -1;\n    opacity: 0;\n    transform: scale(0);\n}\n\n.section2 {\n    background-color: var(--secondary-green);\n    padding: 30px;\n}\n\n.section2-text{\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: left;\n    height: 100%;\n    padding: 30px;\n}\n\n.image1 {\n    left: -7%;\n    // transform: translateY(-100px);\n}",
                     "styleUrl": "./gsap-introduction.component.scss"
                 }
             ],
@@ -384,7 +422,7 @@
                         "deprecationMessage": ""
                     }
                 ],
-                "line": 18,
+                "line": 30,
                 "jsdoctags": [
                     {
                         "name": "document",
@@ -400,7 +438,7 @@
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<div class=\"flex\">\n  <header #header class=\"header\">\n    <h1>{{ title }}</h1>\n    <app-button\n      label=\"Watch here\"\n      [primary]=\"true\"\n      id=\"cta\"\n      (clickEvent)=\"clickButton($event)\"\n    ></app-button>\n  </header>\n\n  <section #firstSection class=\"panel\">\n    <img id=\"cookie\" src=\"../../../assets/images/cookie.svg\" />\n    <p>GSAP is nice for making smart animation to your projects.</p>\n    <div class=\"box\"></div>\n  </section>\n</div>\n<!-- <section #secondSection>\n  <div class=\"section\">\n    <div class=\"section-header\">\n      <h2>Section 1</h2>\n      <p>{{text}}</p>\n    </div>\n    <div class=\"section-images\">\n      <img\n        #imageFirst\n        src=\"https://thumbs.dreamstime.com/b/lonely-elephant-against-sunset-beautiful-sun-clouds-savannah-serengeti-national-park-africa-tanzania-artistic-imag-image-106950644.jpg\"\n        alt=\"\"\n      />\n      <img\n        #imageSecond\n        src=\"https://previews.123rf.com/images/artshock/artshock1209/artshock120900045/15221647-.jpg\"\n        alt=\"\"\n      />\n      <img\n        #imageThird\n        src=\"https://thumbs.dreamstime.com/z/flower-rose-closeup-white-background-d-render-imag-image-65244784.jpg\"\n        alt=\"\"\n      />\n    </div>\n  </div>\n</section> -->\n"
+            "templateData": "<div class=\"flex\">\n  <header #header class=\"header\">\n    <h1>{{ title }}</h1>\n    <app-button\n      label=\"Watch here\"\n      [primary]=\"true\"\n      id=\"cta\"\n      (clickEvent)=\"clickButton($event)\"\n    ></app-button>\n  </header>\n\n  <section #firstSection class=\"panel\">\n    <img class=\"image0\" id=\"cookie\" src=\"../../../assets/images/cookie.svg\" />\n    <p class=\"firstP\">GSAP is nice for making smart animation to your projects.</p>\n    <div class=\"box\"></div>\n  </section>\n</div>\n\n<div class=\"flex section2\">\n    <div class=\"section2-text\">\n        <div class=\"subtitle\">Static subtitle</div>\n        <p>LET this text be static on scroll</p>\n    </div>\n  \n    <section class=\"panel2\">\n      <img class=\"image1\" src=\"../../../assets/images/cookie.svg\" />\n      <img class=\"image2\" src=\"../../../assets/images/cookie.svg\" />\n      <!-- <img class=\"image1\" src=\"../../../assets/images/cookie.svg\" /> -->\n    </section>\n  </div>\n\n  <div class=\"flex\">\n\n  </div>\n\n"
         },
         {
             "name": "HeaderComponent",
@@ -864,20 +902,20 @@
                 "defaultValue": "Template.bind({})"
             },
             {
-                "name": "InvalidForm",
+                "name": "gsap",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/shared/registration-form/registration-form.stories.ts",
+                "file": "src/app/modules/gsap-introduction/gsap-introduction.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "Template.bind({})"
             },
             {
-                "name": "LoggedIn",
+                "name": "InvalidForm",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/modules/gsap-introduction/gsap-introduction.stories.ts",
+                "file": "src/app/shared/registration-form/registration-form.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -898,16 +936,6 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/app/shared/components/header/Header.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "LoggedOut",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/modules/gsap-introduction/gsap-introduction.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -980,7 +1008,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<GsapIntroductionComponent>",
-                "defaultValue": "(args: GsapIntroductionComponent) => ({\n  props: args,\n})"
+                "defaultValue": "(\n  args: GsapIntroductionComponent\n) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -1106,17 +1134,7 @@
             ],
             "src/app/modules/gsap-introduction/gsap-introduction.stories.ts": [
                 {
-                    "name": "LoggedIn",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/modules/gsap-introduction/gsap-introduction.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "LoggedOut",
+                    "name": "gsap",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/app/modules/gsap-introduction/gsap-introduction.stories.ts",
@@ -1133,7 +1151,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<GsapIntroductionComponent>",
-                    "defaultValue": "(args: GsapIntroductionComponent) => ({\n  props: args,\n})"
+                    "defaultValue": "(\n  args: GsapIntroductionComponent\n) => ({\n  props: args,\n})"
                 }
             ],
             "src/app/modules/page/Page.stories.ts": [
@@ -1280,7 +1298,7 @@
                 "linktype": "component",
                 "name": "GsapIntroductionComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/5",
+                "coverageCount": "0/9",
                 "status": "low"
             },
             {
@@ -1288,17 +1306,7 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "LoggedIn",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/modules/gsap-introduction/gsap-introduction.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "LoggedOut",
+                "name": "gsap",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
