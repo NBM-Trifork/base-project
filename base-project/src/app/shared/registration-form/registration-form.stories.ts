@@ -29,54 +29,65 @@ const Template: Story<RegistrationFormComponent> = (
 ) => ({
   props: args,
 });
+export const Empty = {};
 
-export const FilledForm = Template.bind({});
+export const FilledForm = {
+  ...Empty,
+  play: async () => {
+    const nameInput = screen.getByLabelText('Name', {
+      selector: 'input',
+    });
 
-FilledForm.play = async () => {
-  const nameInput = screen.getByLabelText('Name', {
-    selector: 'input',
-  });
+    await userEvent.type(nameInput, 'Nanna', {
+      delay: 100,
+    });
+    const emailInput = screen.getByLabelText('Email', {
+      selector: 'input',
+    });
 
-  await userEvent.type(nameInput, 'Nanna', {
-    delay: 100,
-  });
-  const emailInput = screen.getByLabelText('Email', {
-    selector: 'input',
-  });
+    await userEvent.type(emailInput, 'example-email@email.com', {
+      delay: 100,
+    });
 
-  await userEvent.type(emailInput, 'example-email@email.com', {
-    delay: 100,
-  });
+    const phoneNumberInput = screen.getByLabelText('Phone Number', {
+      selector: 'input',
+    });
 
-  const phoneNumberInput = screen.getByLabelText('Phone Number', {
-    selector: 'input',
-  });
+    await userEvent.type(phoneNumberInput, '33333333', {
+      delay: 100,
+    });
 
-  await userEvent.type(phoneNumberInput, '33333333', {
-    delay: 100,
-  });
+    const messageInput = screen.getByLabelText('Message', {
+      selector: 'input',
+    });
 
-  const messageInput = screen.getByLabelText('Message', {
-    selector: 'input',
-  });
+    await userEvent.type(messageInput, 'Jeg er interesseret i et job', {
+      delay: 100,
+    });
 
-  await userEvent.type(messageInput, 'Jeg er interesseret i et job', {
-    delay: 100,
-  });
+    const privacyInput = screen.getByLabelText(
+      'I agree to the privacy policy',
+      {
+        selector: 'input',
+      }
+    );
 
-  const privacyInput = screen.getByLabelText('I agree to the privacy policy', {
-    selector: 'input',
-  });
+    await userEvent.type(privacyInput, 'true', {
+      delay: 100,
+    });
 
-  await userEvent.type(privacyInput, 'true', {
-    delay: 100,
-  });
+    const Submit = screen.getByRole('button');
 
-  const Submit = screen.getByRole('button');
+    await userEvent.click(Submit);
 
-  await userEvent.click(Submit);
+    await expect(Submit).toHaveBeenCalledWith({
+      name: 'Nanna',
+      email: 'example-email@email.com',
+      phoneNumber: '33333333',
+      
+    });
+  },
 };
-
 
 export const InvalidForm = Template.bind({});
 

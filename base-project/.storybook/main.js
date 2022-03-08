@@ -8,7 +8,8 @@ module.exports = {
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
-    "storybook-addon-designs"
+    "storybook-addon-designs",
+    "@storybook/addon-a11y",
   ],
   "framework": "@storybook/angular",
   "core": {
@@ -16,5 +17,8 @@ module.exports = {
   },
   "resolve": {
     "extensions": [".ts", ".mdx", ".md"]
-  }
+  },
+  "features": {
+    "interactionsDebugger": true,
+  },
 }
