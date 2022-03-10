@@ -1,10 +1,11 @@
-import { Meta, Story, componentWrapperDecorator } from '@storybook/angular';
-import { screen, userEvent } from '@storybook/testing-library';
+import { FormBuilder, FormControl, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
+import { Meta, Story } from '@storybook/angular';
+import { userEvent, waitFor, within } from '@storybook/testing-library';
 
 import { ButtonComponent } from '../components/button/button.component';
 import { CommonModule } from '@angular/common';
-import { ReactiveFormsModule } from '@angular/forms';
 import { RegistrationFormComponent } from './registration-form.component';
+import { expect } from '@storybook/jest';
 import { moduleMetadata } from '@storybook/angular';
 
 export default {
@@ -13,15 +14,12 @@ export default {
   decorators: [
     moduleMetadata({
       declarations: [ButtonComponent],
-      imports: [CommonModule, ReactiveFormsModule],
-    }),
-    // componentWrapperDecorator(
-    //   (story) => `<div style="margin: 3em">${story}</div>`
-    // ),
+      imports: [CommonModule, ReactiveFormsModule, FormsModule],
+    })
   ],
-  parameters: {
-    layout: 'centered',
-  },
+  argTypes: {
+    onSubmit: { action: true },
+  }
 } as Meta;
 
 const Template: Story<RegistrationFormComponent> = (
@@ -29,109 +27,46 @@ const Template: Story<RegistrationFormComponent> = (
 ) => ({
   props: args,
 });
-export const Empty = {};
-
-export const FilledForm = {
-  ...Empty,
-  play: async () => {
-    const nameInput = screen.getByLabelText('Name', {
-      selector: 'input',
-    });
-
-    await userEvent.type(nameInput, 'Nanna', {
-      delay: 100,
-    });
-    const emailInput = screen.getByLabelText('Email', {
-      selector: 'input',
-    });
-
-    await userEvent.type(emailInput, 'example-email@email.com', {
-      delay: 100,
-    });
-
-    const phoneNumberInput = screen.getByLabelText('Phone Number', {
-      selector: 'input',
-    });
-
-    await userEvent.type(phoneNumberInput, '33333333', {
-      delay: 100,
-    });
-
-    const messageInput = screen.getByLabelText('Message', {
-      selector: 'input',
-    });
-
-    await userEvent.type(messageInput, 'Jeg er interesseret i et job', {
-      delay: 100,
-    });
-
-    const privacyInput = screen.getByLabelText(
-      'I agree to the privacy policy',
-      {
-        selector: 'input',
-      }
-    );
-
-    await userEvent.type(privacyInput, 'true', {
-      delay: 100,
-    });
-
-    const Submit = screen.getByRole('button');
-
-    await userEvent.click(Submit);
-
-    await expect(Submit).toHaveBeenCalledWith({
-      name: 'Nanna',
-      email: 'example-email@email.com',
-      phoneNumber: '33333333',
-      
-    });
-  },
+export const FilledForm = Template.bind({});
+FilledForm.play = async ({ args, canvasElement }) => {
+  const canvas = within(canvasElement);
+  await userEvent.type(canvas.getByLabelText('Name'), 'Jane Doe', {
+    delay: 100,
+  });
+  await userEvent.type(canvas.getByLabelText('Email'), 'valid-email@gmail.com',{
+    delay: 100,
+  });
+  await userEvent.type(canvas.getByLabelText('Phone Number'), '22223344', {
+    delay: 100,
+  });
+  await userEvent.type(canvas.getByLabelText('Message'), 'I am interested in a job', {
+    delay: 100,
+  });
+  await userEvent.type(canvas.getByLabelText('I agree to the privacy policy'), 'true', {
+    delay: 100,
+  });
+  await userEvent.click(canvas.getByTestId('button'));
+  await waitFor(() => expect(args.onSubmit).toHaveBeenCalled());
 };
 
-export const InvalidForm = Template.bind({});
-
-InvalidForm.play = async () => {
-  const nameInput = screen.getByLabelText('Name', {
-    selector: 'input',
-  });
-
-  await userEvent.type(nameInput, 'Nanna', {
+export const InvalidFilledForm = Template.bind({});
+InvalidFilledForm.play = async ({ args, canvasElement }) => {
+  const canvas = within(canvasElement);
+  await userEvent.type(canvas.getByLabelText('Name'), 'Jane Doe', {
     delay: 100,
   });
-  const emailInput = screen.getByLabelText('Email', {
-    selector: 'input',
-  });
-
-  await userEvent.type(emailInput, 'example-email', {
+  await userEvent.type(canvas.getByLabelText('Email'), 'Invalid-email',{
     delay: 100,
   });
-
-  const phoneNumberInput = screen.getByLabelText('Phone Number', {
-    selector: 'input',
-  });
-
-  await userEvent.type(phoneNumberInput, 'not a phone numner', {
+  await userEvent.type(canvas.getByLabelText('Phone Number'), '22223344', {
     delay: 100,
   });
-
-  const messageInput = screen.getByLabelText('Message', {
-    selector: 'input',
-  });
-
-  await userEvent.type(messageInput, 'Jeg er interesseret i et job', {
+  await userEvent.type(canvas.getByLabelText('Message'), 'I am interested in a job', {
     delay: 100,
   });
-
-  const privacyInput = screen.getByLabelText('I agree to the privacy policy', {
-    selector: 'input',
-  });
-
-  await userEvent.type(privacyInput, 'false', {
+  await userEvent.type(canvas.getByLabelText('I agree to the privacy policy'), 'false', {
     delay: 100,
   });
-
-  const Submit = screen.getByRole('button');
-
-  await userEvent.click(Submit);
+  await userEvent.click(canvas.getByTestId('button'));
+  await waitFor(() => expect(args.onSubmit).toHaveBeenCalled());
 };

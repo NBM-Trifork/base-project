@@ -23,6 +23,7 @@ import { RegistrationFormComponent } from './shared/registration-form/registrati
     AppRoutingModule,
     ReactiveFormsModule,
   ],
+  exports: [ButtonComponent],
   providers: [],
   bootstrap: [AppComponent]
 })

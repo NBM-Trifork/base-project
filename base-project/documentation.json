@@ -128,7 +128,7 @@
                 }
             ],
             "stylesData": "",
-            "templateData": "<app-gsap-introduction></app-gsap-introduction>\n<!-- <app-registration-form></app-registration-form> -->"
+            "templateData": "<!-- <app-gsap-introduction></app-gsap-introduction> -->\n<app-registration-form></app-registration-form>"
         },
         {
             "name": "ButtonComponent",
@@ -278,7 +278,7 @@
                     }
                 }
             },
-            "templateData": "<button (click)=\"onClick($event)\" [ngClass]=\"classes\">{{label}}</button>\n"
+            "templateData": "<button (click)=\"onClick($event)\" [ngClass]=\"classes\">{{ label }}</button>\n"
         },
         {
             "name": "GsapIntroductionComponent",
@@ -557,7 +557,7 @@
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<header>\n  <div class=\"wrapper\" [ngStyle]=\"{ 'background-color': backgroundColor }\">\n    <span  class=\"logo\"> {{title}} </span>\n\n    <h1>Angular components</h1>\n    <div>\n      <div *ngIf=\"user\">\n        <span class=\"welcome\">\n          Welcome, <b>{{ user?.name }}</b\n          >!\n        </span>\n\n        <app-button\n          *ngIf=\"user\"\n          size=\"small\"\n          (onClick)=\"onLogout.emit($event)\"\n          label=\"Log out\"\n        ></app-button>\n      </div>\n      <div *ngIf=\"!user\">\n        <app-button\n          *ngIf=\"!user\"\n          size=\"small\"\n          class=\"margin-left\"\n          (onClick)=\"onLogin.emit($event)\"\n          label=\"Log in\"\n        ></app-button>\n        <app-button\n          *ngIf=\"!user\"\n          size=\"small\"\n          [primary]=\"true\"\n          class=\"margin-left\"\n          (onClick)=\"onCreateAccount.emit($event)\"\n          label=\"Sign up\"\n        ></app-button>\n      </div>\n    </div>\n  </div>\n</header>\n"
+            "templateData": "<header>\n  <div class=\"wrapper\" [ngStyle]=\"{ 'background-color': backgroundColor }\">\n    <span  class=\"logo\"> {{title}} </span>\n\n    <div class=\"subtitle\">Angular components</div>\n    <div>\n      <div *ngIf=\"user\">\n        <span class=\"welcome\">\n          Welcome, <b>{{ user?.name }}</b\n          >!\n        </span>\n\n        <app-button\n          *ngIf=\"user\"\n          size=\"small\"\n          (onClick)=\"onLogout.emit($event)\"\n          label=\"Log out\"\n        ></app-button>\n      </div>\n      <div *ngIf=\"!user\">\n        <app-button\n          *ngIf=\"!user\"\n          size=\"small\"\n          class=\"margin-left\"\n          (onClick)=\"onLogin.emit($event)\"\n          label=\"Log in\"\n        ></app-button>\n        <app-button\n          *ngIf=\"!user\"\n          size=\"small\"\n          [primary]=\"true\"\n          class=\"margin-left\"\n          (onClick)=\"onCreateAccount.emit($event)\"\n          label=\"Sign up\"\n        ></app-button>\n      </div>\n    </div>\n  </div>\n</header>\n"
         },
         {
             "name": "PageComponent",
@@ -664,7 +664,7 @@
         },
         {
             "name": "RegistrationFormComponent",
-            "id": "component-RegistrationFormComponent-2abe9764d05c25cc5fdfc18e0579f490479ea0dabe035ded6fb01d0143049dee03606ecef4cd5ed0c952bd5f418c472f768054fccb291efa84a393c273424346",
+            "id": "component-RegistrationFormComponent-e65bf50ae9455fd57d8ea3f14354c0c21ef8ab7013c75c9e04996b1781071c01cc0520cb79e753b42833f02c5b2aa9b2aa6ddc71ab2ec8381b8686c3468870fd",
             "file": "src/app/shared/registration-form/registration-form.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -680,7 +680,17 @@
                 "./registration-form.component.html"
             ],
             "viewProviders": [],
-            "inputsClass": [],
+            "inputsClass": [
+                {
+                    "name": "registration",
+                    "defaultValue": "new FormGroup({\n    name: new FormControl(''),\n    email: new FormControl('', [Validators.email, Validators.required]),\n    phoneNumber: new FormControl(''),\n    message: new FormControl(''),\n    privacy: new FormControl(false, Validators.requiredTrue),\n  })",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "any",
+                    "decorators": []
+                }
+            ],
             "outputsClass": [
                 {
                     "name": "loggedIn",
@@ -691,36 +701,15 @@
                     "type": "EventEmitter"
                 }
             ],
-            "propertiesClass": [
-                {
-                    "name": "registrationForm",
-                    "defaultValue": "new FormGroup({\n    name: new FormControl(''),\n    email: new FormControl('', [Validators.required, Validators.email]),\n    phoneNumber: new FormControl(''),\n    message: new FormControl(''),\n    privacy: new FormControl(false, Validators.requiredTrue),\n  })",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "optional": false,
-                    "description": "",
-                    "line": 12
-                }
-            ],
+            "propertiesClass": [],
             "methodsClass": [
-                {
-                    "name": "ngOnInit",
-                    "args": [],
-                    "optional": false,
-                    "returnType": "void",
-                    "typeParameters": [],
-                    "line": 22,
-                    "deprecated": false,
-                    "deprecationMessage": ""
-                },
                 {
                     "name": "onSubmit",
                     "args": [],
                     "optional": false,
-                    "returnType": "void",
+                    "returnType": "() => void",
                     "typeParameters": [],
-                    "line": 24,
+                    "line": 22,
                     "deprecated": false,
                     "deprecationMessage": "",
                     "modifierKind": [
@@ -735,39 +724,28 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, EventEmitter, OnInit, Output } from '@angular/core';\nimport { Form, FormControl, FormGroup, Validators } from '@angular/forms';\n\nimport { Contact } from '../models/Contact';\n\n@Component({\n  selector: 'app-registration-form',\n  templateUrl: './registration-form.component.html',\n  styleUrls: ['./registration-form.component.scss'],\n})\nexport class RegistrationFormComponent implements OnInit {\n  registrationForm = new FormGroup({\n    name: new FormControl(''),\n    email: new FormControl('', [Validators.required, Validators.email]),\n    phoneNumber: new FormControl(''),\n    message: new FormControl(''),\n    privacy: new FormControl(false, Validators.requiredTrue),\n  });\n  @Output() loggedIn = new EventEmitter<Contact>();\n  constructor() {}\n\n  ngOnInit(): void {}\n\n  public onSubmit() {\n\n    if (this.registrationForm.valid) {\n      var contact: Contact = (\n        this.registrationForm.value.name,\n        this.registrationForm.value.email,\n        this.registrationForm.value.phoneNumber,\n        this.registrationForm.value.message,\n        this.registrationForm.value.privacy\n      );\n      this.loggedIn.emit(contact);\n      alert('Success');\n    }\n    alert('Error');\n  }\n}\n",
+            "sourceCode": "import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';\nimport { Form, FormControl, FormGroup, Validators } from '@angular/forms';\n\nimport { Contact } from '../models/Contact';\n\n@Component({\n  selector: 'app-registration-form',\n  templateUrl: './registration-form.component.html',\n  styleUrls: ['./registration-form.component.scss'],\n})\nexport class RegistrationFormComponent{\n  @Input() registration = new FormGroup({\n    name: new FormControl(''),\n    email: new FormControl('', [Validators.email, Validators.required]),\n    phoneNumber: new FormControl(''),\n    message: new FormControl(''),\n    privacy: new FormControl(false, Validators.requiredTrue),\n  });\n  @Output() loggedIn = new EventEmitter<Contact>();\n\n\n  public onSubmit() {\n    return () => {\n      console.log('onSubmit');\n      if (this.registration.valid) {\n        var contact: Contact =\n          (this.registration.value.name,\n          this.registration.value.email,\n          this.registration.value.phoneNumber,\n          this.registration.value.message,\n          this.registration.value.privacy);\n        this.loggedIn.emit(contact);\n        alert('Success');\n      }\n      alert('Error');\n    };\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".registrationForm {\n    background-color: var(--white);\n    box-shadow: 0px 4px 16px rgb(0 0 0 / 12%);\n    border-radius: 20px;\n    width: 750px;\n}\n\n.formfield {\n    padding: 32px;\n    min-height: 72px;\n    display: flex;\n    flex-direction: column;\n}\n\n.formfield--middle{\n    border-top: 1px solid var(--dark-40)!important;\n}\n\n.row {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: top;\n    padding: 32px;\n}\n\n.checkbox {\n    display: flex;\n    flex-direction: row;\n    gap: 10px;\n}\n\n.alert\n{\n    padding: 32px;\n    color:red\n}\n",
+                    "data": ".registrationForm {\n    background-color: var(--white);\n    box-shadow: 0px 4px 16px rgb(0 0 0 / 12%);\n    border-radius: 20px;\n    width: 750px;\n}\n\n.formfield {\n    padding: 32px;\n    min-height: 72px;\n    display: flex;\n    flex-direction: column;\n}\n\n.formfield--middle{\n    border-top: 1px solid var(--dark-40)!important;\n}\n\n.row {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: top;\n    padding: 32px;\n}\n\n.checkbox {\n    display: flex;\n    flex-direction: row;\n    gap: 10px;\n}\n\n.alert\n{\n    color:red\n}\n",
                     "styleUrl": "./registration-form.component.scss"
                 }
             ],
             "stylesData": "",
-            "constructorObj": {
-                "name": "constructor",
-                "description": "",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "args": [],
-                "line": 19
-            },
-            "implements": [
-                "OnInit"
-            ],
-            "templateData": "<form [formGroup]=\"registrationForm\" (ngSubmit)=\"onSubmit()\" class=\"registrationForm\" id=\"registrationForm\">\n\n    <div class=\"formfield\">\n        <label for=\"name\">Name</label>\n        <input id=\"name\" type=\"text\" formControlName=\"name\">\n    </div>\n    <div class=\"formfield formfield--middle\">\n        <label for=\"email\">Email</label>\n        <input id=\"email\" type=\"email\" formControlName=\"email\" required >\n    </div>\n    <div *ngIf=\"registrationForm.controls['email'].invalid && (registrationForm.controls['email'].dirty || registrationForm.controls['email'].touched)\" class=\"alert\">\n        <div *ngIf=\"registrationForm.controls['email'].hasError('required')\">\n        Please enter email\n      </div>\n      <div *ngIf=\"registrationForm.controls['email'].hasError('email')\">\n        Please enter valid email\n      </div>\n    </div>\n    <div class=\"formfield formfield--middle\">\n        <label for=\"phoneNumber\">Phone Number</label>\n        <input id=\"phoneNumber\" type=\"tel\" formControlName=\"phoneNumber\">\n    </div>\n    <div class=\"formfield formfield--middle\">\n        <label for=\"message\">Message</label>\n        <input id=\"message\" type=\"textarea\" formControlName=\"message\">\n    </div>\n    <div class=\"row\">\n        <div class=\"checkbox\">\n            <input id=\"privacy\" type=\"checkbox\" formControlName=\"privacy\">\n            <label for=\"privacy\">I agree to the privacy policy</label>\n        </div>\n       <app-button type=\"submit\"\n        size=\"medium\"\n        [primary]=\"true\"\n        (onClick)=\"onSubmit()\"\n        label=\"Submit\"\n      ></app-button>\n       \n    </div>\n    \n</form>\n"
+            "templateData": "<form\n  [formGroup]=\"registration\"\n  class=\"registrationForm\"\n  id=\"registrationForm\"\n>\n  <div class=\"formfield\">\n    <label for=\"name\">Name</label>\n    <input id=\"name\" type=\"text\" formControlName=\"name\" />\n  </div>\n  <div class=\"formfield formfield--middle\">\n    <label for=\"email\">Email</label>\n    <input id=\"email\" type=\"email\" formControlName=\"email\" />\n    <div\n    *ngIf=\"\n      registration.controls['email']?.invalid &&\n      registration.controls['email']?.dirty\n    \"\n    class=\"alert\"\n  >\n    <div *ngIf=\"registration.controls['email']?.errors?.['required']\">\n      Please enter email\n    </div>\n    <div *ngIf=\"registration.controls['email']?.errors?.['email']\">\n      Please enter valid email\n    </div>\n  </div>\n  </div>\n  \n  <div class=\"formfield formfield--middle\">\n    <label for=\"phoneNumber\">Phone Number</label>\n    <input id=\"phoneNumber\" type=\"tel\" formControlName=\"phoneNumber\" />\n  </div>\n  <div class=\"formfield formfield--middle\">\n    <label for=\"message\">Message</label>\n    <input id=\"message\" type=\"textarea\" formControlName=\"message\" />\n  </div>\n  <div class=\"row\">\n    <div class=\"checkbox\">\n      <input id=\"privacy\" type=\"checkbox\" formControlName=\"privacy\" />\n      <label for=\"privacy\">I agree to the privacy policy</label>\n    </div>\n    <app-button\n      data-testid=\"button\"\n      size=\"medium\"\n      [primary]=\"true\"\n      [clickAction]=\"onSubmit()\"\n      label=\"Submit\"\n    ></app-button>\n  </div>\n</form>\n"
         }
     ],
     "modules": [
         {
             "name": "AppModule",
-            "id": "module-AppModule-b6cea06151bd4c691f5935659da7d7db1fd3a0d3406a265e37b6efff0f01a4d3a156e9aa6211713fc43d4979e61b99fed464c2cc5d858f5a609648d1b3079cc3",
+            "id": "module-AppModule-f020a3edc75587c6917df1f7f423bd1f3f7f1e2c60b6d5f4f6a8de859d1f3495531742bcf731fab5675daaaec8920b8a5b01f30e37cf06c62ecd6e815ac0a968",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/app/app.module.ts",
             "methods": [],
-            "sourceCode": "import { AppComponent } from './app.component';\nimport { AppRoutingModule } from './app-routing.module';\nimport { BrowserModule } from '@angular/platform-browser';\nimport { ButtonComponent } from './shared/components/button/button.component';\nimport { GsapIntroductionComponent } from './modules/gsap-introduction/gsap-introduction.component';\nimport { HeaderComponent } from './shared/components/header/header.component';\nimport { NgModule } from '@angular/core';\nimport { PageComponent } from './modules/page/page.component';\nimport { ReactiveFormsModule } from '@angular/forms';\nimport { RegistrationFormComponent } from './shared/registration-form/registration-form.component';\n\n@NgModule({\n  declarations: [\n    AppComponent,\n    ButtonComponent,\n    HeaderComponent,\n    PageComponent,\n    RegistrationFormComponent,\n    GsapIntroductionComponent,\n  ],\n  imports: [\n    BrowserModule,\n    AppRoutingModule,\n    ReactiveFormsModule,\n  ],\n  providers: [],\n  bootstrap: [AppComponent]\n})\nexport class AppModule { }\n",
+            "sourceCode": "import { AppComponent } from './app.component';\nimport { AppRoutingModule } from './app-routing.module';\nimport { BrowserModule } from '@angular/platform-browser';\nimport { ButtonComponent } from './shared/components/button/button.component';\nimport { GsapIntroductionComponent } from './modules/gsap-introduction/gsap-introduction.component';\nimport { HeaderComponent } from './shared/components/header/header.component';\nimport { NgModule } from '@angular/core';\nimport { PageComponent } from './modules/page/page.component';\nimport { ReactiveFormsModule } from '@angular/forms';\nimport { RegistrationFormComponent } from './shared/registration-form/registration-form.component';\n\n@NgModule({\n  declarations: [\n    AppComponent,\n    ButtonComponent,\n    HeaderComponent,\n    PageComponent,\n    RegistrationFormComponent,\n    GsapIntroductionComponent,\n  ],\n  imports: [\n    BrowserModule,\n    AppRoutingModule,\n    ReactiveFormsModule,\n  ],\n  exports: [ButtonComponent],\n  providers: [],\n  bootstrap: [AppComponent]\n})\nexport class AppModule { }\n",
             "children": [
                 {
                     "type": "providers",
@@ -806,7 +784,11 @@
                 },
                 {
                     "type": "exports",
-                    "elements": []
+                    "elements": [
+                        {
+                            "name": "ButtonComponent"
+                        }
+                    ]
                 },
                 {
                     "type": "bootstrap",
@@ -912,7 +894,7 @@
                 "defaultValue": "Template.bind({})"
             },
             {
-                "name": "InvalidForm",
+                "name": "InvalidFilledForm",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/app/shared/registration-form/registration-form.stories.ts",
@@ -1112,7 +1094,7 @@
                     "defaultValue": "Template.bind({})"
                 },
                 {
-                    "name": "InvalidForm",
+                    "name": "InvalidFilledForm",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/app/shared/registration-form/registration-form.stories.ts",
@@ -1472,7 +1454,7 @@
                 "linktype": "component",
                 "name": "RegistrationFormComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/6",
+                "coverageCount": "0/4",
                 "status": "low"
             },
             {
@@ -1490,7 +1472,7 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "InvalidForm",
+                "name": "InvalidFilledForm",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
