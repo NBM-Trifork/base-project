@@ -9,7 +9,6 @@ module.exports = {
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
     "storybook-addon-designs",
-    "@storybook/addon-a11y",
   ],
   "framework": "@storybook/angular",
   "core": {
@@ -20,5 +19,6 @@ module.exports = {
   },
   "features": {
     "interactionsDebugger": true,
+    "storyStoreV7": true,
   },
 }
