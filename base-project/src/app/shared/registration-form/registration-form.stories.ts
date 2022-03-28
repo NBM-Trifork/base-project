@@ -48,6 +48,7 @@ FilledForm.play = async ({ args, canvasElement }) => {
   await userEvent.type(canvas.getByLabelText('I agree to the privacy policy'), 'true', {
     delay: 100,
   });
+
   const button = await canvas.getByRole('button', { name: /Submit/i });
   await userEvent.click(button);
   await waitFor(() => expect(args.onSubmit).toHaveBeenCalled());

@@ -251,7 +251,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".button {\n    font-family: Poppins-SemiBold;\n    font-style: normal;\n    text-transform: uppercase;\n    border: 3px solid var(--primary-orange) !important;\n    border-radius: 100pc;\n    cursor: pointer;\n    display: inline-block;\n  }\n  .button:focus{\n    outline: none;\n  }\n\n  .button--primary {\n    color: var(--primary-orange);\n    background-color: var(--white);\n    border: 3px solid var(--primary-orange) !important;\n  }\n  .button--primary:hover {\n    color: var(--white);\n    background-color: var(--primary-orange);\n  }\n  \n  .button--secondary {\n    color: var(--primary-dark);\n    background-color: var(--white);\n    border: 1px solid var(--dark-40) !important;\n  }\n  .button--secondary:hover {\n    color: var(--white);\n    background-color: var(--primary-orange);\n  }\n\n  .button--small {\n    font-size: 12px;\n    line-height: 18px;\n    padding: 6px 24px;\n  }\n  .button--medium {\n    border: 3px;\n    padding: 12px 32px;\n    font-size: 14px;\n    line-height: 21px;\n  }\n\n  ",
+                    "data": ".button {\n    font-family: Poppins-SemiBold;\n    font-style: normal;\n    text-transform: uppercase;\n    border: 3px solid var(--secondary-orange-dark) !important;\n    border-radius: 100pc;\n    cursor: pointer;\n    display: inline-block;\n  }\n  .button:focus{\n    outline: none;\n  }\n\n  .button--primary {\n    color: var(--primary-orange);\n    background-color: var(--white);\n    border: 3px solid var(--primary-orange) !important;\n  }\n  .button--primary:hover {\n    color: var(--white);\n    background-color: var(--primary-orange);\n  }\n  \n  .button--secondary {\n    color: var(--primary-dark);\n    background-color: var(--white);\n    border: 1px solid var(--dark-40) !important;\n  }\n  .button--secondary:hover {\n    color: var(--white);\n    background-color: var(--primary-orange);\n  }\n\n  .button--small {\n    font-size: 12px;\n    line-height: 18px;\n    padding: 6px 24px;\n  }\n  .button--medium {\n    border: 3px;\n    padding: 12px 32px;\n    font-size: 14px;\n    line-height: 21px;\n  }\n\n  ",
                     "styleUrl": "./button.component.scss"
                 }
             ],
@@ -971,16 +971,6 @@
                 "defaultValue": "Template.bind({})"
             },
             {
-                "name": "InvalidFilledForm",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/shared/registration-form/registration-form.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
                 "name": "LoggedIn",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -1063,11 +1053,11 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/modules/gsap-introduction/gsap-introduction.stories.ts",
+                "file": "src/app/shared/registration-form/registration-form.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<GsapIntroductionComponent>",
-                "defaultValue": "(\n  args: GsapIntroductionComponent\n) => ({\n  props: args,\n})"
+                "type": "Story<RegistrationFormComponent>",
+                "defaultValue": "(\n  args: RegistrationFormComponent\n) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -1083,11 +1073,16 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/shared/registration-form/registration-form.stories.ts",
+                "file": "src/app/modules/gsap-introduction/gsap-introduction.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
+<<<<<<< HEAD
                 "type": "Story<RegistrationFormComponent>",
                 "defaultValue": "(args: RegistrationFormComponent) => ({\n  props: args,\n})"
+=======
+                "type": "Story<GsapIntroductionComponent>",
+                "defaultValue": "(\n  args: GsapIntroductionComponent\n) => ({\n  props: args,\n})"
+>>>>>>> 9618a9d (Changed margin on button)
             },
             {
                 "name": "Template",
@@ -1162,16 +1157,6 @@
             "src/app/shared/registration-form/registration-form.stories.ts": [
                 {
                     "name": "FilledForm",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/shared/registration-form/registration-form.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "InvalidFilledForm",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/app/shared/registration-form/registration-form.stories.ts",
@@ -1540,16 +1525,6 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "FilledForm",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/shared/registration-form/registration-form.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "InvalidFilledForm",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
