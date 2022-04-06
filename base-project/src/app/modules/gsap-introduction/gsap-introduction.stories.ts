@@ -6,7 +6,7 @@ import GsapIntroduction from './gsap-introduction.mdx';
 import { GsapIntroductionComponent } from './gsap-introduction.component';
 
 export default {
-  title: 'Components/GSAP Introduction',
+  title: 'Pages/GSAP Introduction',
   component: GsapIntroductionComponent,
   parameters: {
     // More on Story layout: https://storybook.js.org/docs/angular/configure/story-layout
@@ -32,5 +32,6 @@ const Template: Story<GsapIntroductionComponent> = (
 export const gsap = Template.bind({});
 gsap.args = {
   cookieEase: 'back.out(1.7)',
-  panelEase: 'Circ.easeOut'
+  panelEase: 'Circ.easeOut',
+  section3Ease: 'back.out(1.7)'
 };

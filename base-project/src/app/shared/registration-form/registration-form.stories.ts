@@ -1,4 +1,4 @@
-import { FormBuilder, FormControl, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Meta, Story } from '@storybook/angular';
 import { userEvent, waitFor, within } from '@storybook/testing-library';
 
@@ -15,19 +15,22 @@ export default {
     moduleMetadata({
       declarations: [ButtonComponent],
       imports: [CommonModule, ReactiveFormsModule, FormsModule],
-    })
+    }),
   ],
-  argTypes: {
-    onSubmit: { action: true },
-  }
+  parameters: {
+    // More on Story layout: https://storybook.js.org/docs/angular/configure/story-layout
+    layout: 'fullscreen'
+  },
 } as Meta;
 
-const Template: Story<RegistrationFormComponent> = (
-  args: RegistrationFormComponent
-) => ({
+const Template: Story<RegistrationFormComponent> = (args: RegistrationFormComponent) => ({
   props: args,
 });
+
+
 export const FilledForm = Template.bind({});
+FilledForm.args = {
+}
 FilledForm.play = async ({ args, canvasElement }) => {
   const canvas = within(canvasElement);
   await userEvent.type(canvas.getByLabelText('Name'), 'Jane Doe', {
@@ -45,7 +48,8 @@ FilledForm.play = async ({ args, canvasElement }) => {
   await userEvent.type(canvas.getByLabelText('I agree to the privacy policy'), 'true', {
     delay: 100,
   });
-  await userEvent.click(canvas.getByTestId('button'));
+  const button = await canvas.getByRole('button', { name: /Submit/i });
+  await userEvent.click(button);
   await waitFor(() => expect(args.onSubmit).toHaveBeenCalled());
 };
 
@@ -67,6 +71,7 @@ InvalidFilledForm.play = async ({ args, canvasElement }) => {
   await userEvent.type(canvas.getByLabelText('I agree to the privacy policy'), 'false', {
     delay: 100,
   });
-  await userEvent.click(canvas.getByTestId('button'));
+  const button = await canvas.getByRole('button', { name: /Submit/i });
+  await userEvent.click(button);
   await waitFor(() => expect(args.onSubmit).toHaveBeenCalled());
 };

@@ -11,25 +11,31 @@
 
   <section #firstSection class="panel">
     <img class="image0" id="cookie" src="../../../assets/images/cookie.svg" />
-    <p class="firstP">GSAP is nice for making smart animation to your projects.</p>
+    <p class="firstP">
+      GSAP is nice for making smart animation to your projects.
+    </p>
     <div class="box"></div>
   </section>
 </div>
 
 <div class="flex section2">
-    <div class="section2-text">
-        <div class="subtitle">Static subtitle</div>
-        <p>LET this text be static on scroll</p>
-    </div>
-  
-    <section class="panel2">
-      <img class="image1" src="../../../assets/images/cookie.svg" />
-      <img class="image2" src="../../../assets/images/cookie.svg" />
-      <!-- <img class="image1" src="../../../assets/images/cookie.svg" /> -->
-    </section>
+  <div class="section2-text">
+    <div class="subtitle">Static subtitle</div>
+    <p>LET this text be static on scroll</p>
   </div>
 
-  <div class="flex">
+  <section class="panel2">
+    <img class="image1" src="../../../assets/images/cookie.svg" />
+    <img class="image2" src="../../../assets/images/cookie.svg" />
+    <!-- <img class="image1" src="../../../assets/images/cookie.svg" /> -->
+  </section>
+</div>
 
-  </div>
-
+<div class="flex" style="background-color: var(--secondary-orange); padding: 20px;">
+  <app-button
+      label="Watch here"
+      [primary]="true"
+      id="ctaAnimation"
+      (clickEvent)="clickButton2($event)"
+    ></app-button>
+</div>

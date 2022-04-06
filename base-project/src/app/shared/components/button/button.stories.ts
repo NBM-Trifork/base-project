@@ -2,9 +2,6 @@ import type { Meta, Story } from '@storybook/angular';
 
 import { ButtonComponent } from '../button/button.component';
 import  ButtonDocumentation from './Button-Documentation.mdx';
-import { CommonModule } from '@angular/common';
-import { componentWrapperDecorator } from '@storybook/angular';
-import { moduleMetadata } from '@storybook/angular';
 import { withDesign } from 'storybook-addon-designs';
 
 export default {

@@ -9,7 +9,7 @@ import {HeaderComponent} from '../../shared/components/header/header.component';
 import {PageComponent} from './page.component';
 
 export default {
-  title: 'Components/Page',
+  title: 'Pages/Page',
   component: PageComponent,
   parameters: {
     // More on Story layout: https://storybook.js.org/docs/angular/configure/story-layout

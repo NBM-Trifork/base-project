@@ -282,7 +282,7 @@
         },
         {
             "name": "GsapIntroductionComponent",
-            "id": "component-GsapIntroductionComponent-42ac3751e2092b28fbf3a0148815905a9ba344d13586fdfff54f8beecb20213fb048438fdbcdfe62eeb8f75fab37490bc5a1306858def9b26fc377bbf415d02d",
+            "id": "component-GsapIntroductionComponent-8f638ff58eb68899dadf76e7bb0cdb7cc755517f6d9849508184a137d5335da403c0684967eac1445963a7f5d79db838ad48704a9d349eaa33309501fc848d45",
             "file": "src/app/modules/gsap-introduction/gsap-introduction.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -304,7 +304,7 @@
                     "defaultValue": "'elastic.out(1, 0.3)'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 29,
+                    "line": 26,
                     "type": "\"back.out(1.7)\" | \"Circ.easeOut\" | \"elastic.out(1, 0.3)\"",
                     "decorators": []
                 },
@@ -313,7 +313,7 @@
                     "defaultValue": "'back.out(1.7)'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 25,
+                    "line": 18,
                     "type": "\"back.out(1.7)\" | \"Circ.easeOut\" | \"elastic.out(1, 0.3)\"",
                     "decorators": []
                 },
@@ -322,7 +322,16 @@
                     "defaultValue": "'Circ.easeOut'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 23,
+                    "line": 16,
+                    "type": "\"back.out(1.7)\" | \"Circ.easeOut\" | \"elastic.out(1, 0.3)\"",
+                    "decorators": []
+                },
+                {
+                    "name": "section3Ease",
+                    "defaultValue": "'elastic.out(1, 0.3)'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 22,
                     "type": "\"back.out(1.7)\" | \"Circ.easeOut\" | \"elastic.out(1, 0.3)\"",
                     "decorators": []
                 }
@@ -337,7 +346,7 @@
                     "type": "string",
                     "optional": false,
                     "description": "",
-                    "line": 22,
+                    "line": 15,
                     "modifierKind": [
                         123
                     ]
@@ -370,6 +379,40 @@
                     "line": 38,
                     "deprecated": false,
                     "deprecationMessage": "",
+                    "modifierKind": [
+                        123
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "event",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "clickButton2",
+                    "args": [
+                        {
+                            "name": "event",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 34,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        123
+                    ],
                     "jsdoctags": [
                         {
                             "name": "event",
@@ -388,7 +431,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 33,
+                    "line": 30,
                     "deprecated": false,
                     "deprecationMessage": ""
                 }
@@ -400,7 +443,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { DOCUMENT } from '@angular/common';\nimport {\n  Component,\n  ElementRef,\n  Inject,\n  Input,\n  OnInit,\n  ViewChild,\n} from '@angular/core';\nimport ScrollTrigger from 'gsap/ScrollTrigger';\n\nimport { gsap } from 'gsap';\n\ngsap.registerPlugin(ScrollTrigger);\n\n@Component({\n  selector: 'app-gsap-introduction',\n  templateUrl: './gsap-introduction.component.html',\n  styleUrls: ['./gsap-introduction.component.scss'],\n})\nexport class GsapIntroductionComponent implements OnInit {\n  public title = 'gsap introduction';\n  @Input() panelEase: 'back.out(1.7)' | 'Circ.easeOut' | 'elastic.out(1, 0.3)' =\n    'Circ.easeOut';\n  @Input() cookieEase:\n    | 'back.out(1.7)'\n    | 'Circ.easeOut'\n    | 'elastic.out(1, 0.3)' = 'back.out(1.7)';\n  @Input() boxEase: 'back.out(1.7)' | 'Circ.easeOut' | 'elastic.out(1, 0.3)' =\n    'elastic.out(1, 0.3)';\n  constructor(@Inject(DOCUMENT) private document: Document) {}\n\n  ngOnInit() {\n    console.log(\"ScrollTrigger\", ScrollTrigger)\n    this.animationOnScroll();\n  }\n\n  clickButton(event: any) {\n    gsap.to('.panel', {\n      duration: 1.5,\n      scaleY: 1,\n      height: '100vh',\n      ease: this.panelEase,\n    });\n    gsap.to('#cookie', {\n      duration: 1,\n      opacity: 1,\n      y: 0,\n      delay: 1,\n      ease: this.cookieEase,\n    });\n    gsap.to('.firstP', {\n      duration: 1,\n      opacity: 1,\n      y: 20,\n      delay: 1.4,\n    });\n    gsap.to('.box', { duration: 4, scale: 1, opacity:1, ease: this.boxEase });\n  }\n\n  animationOnScroll(){\n    gsap.to(\".section2\", {\n      scrollTrigger: {\n        trigger: \".section2\",\n        scrub: true,\n        pin: true,\n        start: \"top top\",\n        end: \"+=500\",\n        toggleClass: \"active\",\n      },\n      duration: 1,\n      opacity: 1,\n      ease: \"power2\"\n    })\n    gsap.to(\".image1\", {\n      scrollTrigger: {\n        trigger: \".section2\",\n        scrub: true,\n        start: \"top bottom\",\n        end: \"bottom -300\",\n      },\n      duration: 1,\n      ease: this.panelEase,\n  \n    });\n  }\n}\n",
+            "sourceCode": "import { DOCUMENT } from '@angular/common';\nimport { Component, Inject, Input, OnInit } from '@angular/core';\nimport ScrollTrigger from 'gsap/ScrollTrigger';\n\nimport { gsap } from 'gsap';\n\ngsap.registerPlugin(ScrollTrigger);\n\n@Component({\n  selector: 'app-gsap-introduction',\n  templateUrl: './gsap-introduction.component.html',\n  styleUrls: ['./gsap-introduction.component.scss'],\n})\nexport class GsapIntroductionComponent implements OnInit {\n  public title = 'gsap introduction';\n  @Input() panelEase: 'back.out(1.7)' | 'Circ.easeOut' | 'elastic.out(1, 0.3)' =\n    'Circ.easeOut';\n  @Input() cookieEase:\n    | 'back.out(1.7)'\n    | 'Circ.easeOut'\n    | 'elastic.out(1, 0.3)' = 'back.out(1.7)';\n    @Input() section3Ease:\n    | 'back.out(1.7)'\n    | 'Circ.easeOut'\n    | 'elastic.out(1, 0.3)' = 'elastic.out(1, 0.3)';\n  @Input() boxEase: 'back.out(1.7)' | 'Circ.easeOut' | 'elastic.out(1, 0.3)' =\n    'elastic.out(1, 0.3)';\n  constructor(@Inject(DOCUMENT) private document: Document) {}\n\n  ngOnInit() {\n    console.log('ScrollTrigger', ScrollTrigger);\n    this.animationOnScroll();\n  }\n  public clickButton2(event: any){\n    gsap.fromTo(\"#ctaAnimation\",{y: 60}, {y: 0, duration: 3, ease: this.section3Ease});\n  }\n\n  public clickButton(event: any) {\n    gsap.to('.panel', {\n      duration: 1.5,\n      scaleY: 1,\n      height: '100vh',\n      ease: this.panelEase,\n    });\n    gsap.to('#cookie', {\n      duration: 1,\n      opacity: 1,\n      y: 0,\n      delay: 1,\n      ease: this.cookieEase,\n    });\n    gsap.to('.firstP', {\n      duration: 1,\n      opacity: 1,\n      y: 20,\n      delay: 1.4,\n    });\n    gsap.to('.box', { duration: 4, scale: 1, opacity: 1, ease: this.boxEase });\n  }\n\n  animationOnScroll() {\n    gsap.to('.section2', {\n      scrollTrigger: {\n        trigger: '.section2',\n        scrub: true,\n        pin: true,\n        start: 'top top',\n        end: '+=500',\n        toggleClass: 'active',\n      },\n      duration: 1,\n      opacity: 1,\n      ease: 'power2',\n    });\n    gsap.to('.image1', {\n      scrollTrigger: {\n        trigger: '.section2',\n        scrub: true,\n        start: 'top bottom',\n        end: 'bottom -300',\n      },\n      duration: 1,\n      ease: this.panelEase,\n    });\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -422,7 +465,7 @@
                         "deprecationMessage": ""
                     }
                 ],
-                "line": 30,
+                "line": 27,
                 "jsdoctags": [
                     {
                         "name": "document",
@@ -438,7 +481,7 @@
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<div class=\"flex\">\n  <header #header class=\"header\">\n    <h1>{{ title }}</h1>\n    <app-button\n      label=\"Watch here\"\n      [primary]=\"true\"\n      id=\"cta\"\n      (clickEvent)=\"clickButton($event)\"\n    ></app-button>\n  </header>\n\n  <section #firstSection class=\"panel\">\n    <img class=\"image0\" id=\"cookie\" src=\"../../../assets/images/cookie.svg\" />\n    <p class=\"firstP\">GSAP is nice for making smart animation to your projects.</p>\n    <div class=\"box\"></div>\n  </section>\n</div>\n\n<div class=\"flex section2\">\n    <div class=\"section2-text\">\n        <div class=\"subtitle\">Static subtitle</div>\n        <p>LET this text be static on scroll</p>\n    </div>\n  \n    <section class=\"panel2\">\n      <img class=\"image1\" src=\"../../../assets/images/cookie.svg\" />\n      <img class=\"image2\" src=\"../../../assets/images/cookie.svg\" />\n      <!-- <img class=\"image1\" src=\"../../../assets/images/cookie.svg\" /> -->\n    </section>\n  </div>\n\n  <div class=\"flex\">\n\n  </div>\n\n"
+            "templateData": "<div class=\"flex\">\n  <header #header class=\"header\">\n    <h1>{{ title }}</h1>\n    <app-button\n      label=\"Watch here\"\n      [primary]=\"true\"\n      id=\"cta\"\n      (clickEvent)=\"clickButton($event)\"\n    ></app-button>\n  </header>\n\n  <section #firstSection class=\"panel\">\n    <img class=\"image0\" id=\"cookie\" src=\"../../../assets/images/cookie.svg\" />\n    <p class=\"firstP\">\n      GSAP is nice for making smart animation to your projects.\n    </p>\n    <div class=\"box\"></div>\n  </section>\n</div>\n\n<div class=\"flex section2\">\n  <div class=\"section2-text\">\n    <div class=\"subtitle\">Static subtitle</div>\n    <p>LET this text be static on scroll</p>\n  </div>\n\n  <section class=\"panel2\">\n    <img class=\"image1\" src=\"../../../assets/images/cookie.svg\" />\n    <img class=\"image2\" src=\"../../../assets/images/cookie.svg\" />\n    <!-- <img class=\"image1\" src=\"../../../assets/images/cookie.svg\" /> -->\n  </section>\n</div>\n\n<div class=\"flex\" style=\"background-color: var(--secondary-orange); padding: 20px;\">\n  <app-button\n      label=\"Watch here\"\n      [primary]=\"true\"\n      id=\"ctaAnimation\"\n      (clickEvent)=\"clickButton2($event)\"\n    ></app-button>\n</div>\n"
         },
         {
             "name": "HeaderComponent",
@@ -664,7 +707,7 @@
         },
         {
             "name": "RegistrationFormComponent",
-            "id": "component-RegistrationFormComponent-e65bf50ae9455fd57d8ea3f14354c0c21ef8ab7013c75c9e04996b1781071c01cc0520cb79e753b42833f02c5b2aa9b2aa6ddc71ab2ec8381b8686c3468870fd",
+            "id": "component-RegistrationFormComponent-0a512db7c3892ddb5dadc6c552318e7fb514f5cd82eb77b64f450d35e547969aa23980d07e4931c04f22388f5ba03dcb8482df236cece862495249abb10c4487",
             "file": "src/app/shared/registration-form/registration-form.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -682,8 +725,16 @@
             "viewProviders": [],
             "inputsClass": [
                 {
+                    "name": "onSubmit",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 26,
+                    "type": "() => () => void",
+                    "decorators": []
+                },
+                {
                     "name": "registration",
-                    "defaultValue": "new FormGroup({\n    name: new FormControl(''),\n    email: new FormControl('', [Validators.email, Validators.required]),\n    phoneNumber: new FormControl(''),\n    message: new FormControl(''),\n    privacy: new FormControl(false, Validators.requiredTrue),\n  })",
+                    "defaultValue": "new FormGroup({})",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 12,
@@ -693,27 +744,50 @@
             ],
             "outputsClass": [
                 {
-                    "name": "loggedIn",
+                    "name": "submitForm",
                     "defaultValue": "new EventEmitter<Contact>()",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 19,
+                    "line": 13,
                     "type": "EventEmitter"
                 }
             ],
             "propertiesClass": [],
             "methodsClass": [
                 {
+                    "name": "initForm",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 17,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 14,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
                     "name": "onSubmit",
                     "args": [],
                     "optional": false,
                     "returnType": "() => void",
                     "typeParameters": [],
-                    "line": 22,
+                    "line": 26,
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "modifierKind": [
-                        123
+                    "decorators": [
+                        {
+                            "name": "Input",
+                            "stringifiedArguments": ""
+                        }
                     ]
                 }
             ],
@@ -724,7 +798,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';\nimport { Form, FormControl, FormGroup, Validators } from '@angular/forms';\n\nimport { Contact } from '../models/Contact';\n\n@Component({\n  selector: 'app-registration-form',\n  templateUrl: './registration-form.component.html',\n  styleUrls: ['./registration-form.component.scss'],\n})\nexport class RegistrationFormComponent{\n  @Input() registration = new FormGroup({\n    name: new FormControl(''),\n    email: new FormControl('', [Validators.email, Validators.required]),\n    phoneNumber: new FormControl(''),\n    message: new FormControl(''),\n    privacy: new FormControl(false, Validators.requiredTrue),\n  });\n  @Output() loggedIn = new EventEmitter<Contact>();\n\n\n  public onSubmit() {\n    return () => {\n      console.log('onSubmit');\n      if (this.registration.valid) {\n        var contact: Contact =\n          (this.registration.value.name,\n          this.registration.value.email,\n          this.registration.value.phoneNumber,\n          this.registration.value.message,\n          this.registration.value.privacy);\n        this.loggedIn.emit(contact);\n        alert('Success');\n      }\n      alert('Error');\n    };\n  }\n}\n",
+            "sourceCode": "import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';\nimport { Form, FormControl, FormGroup, Validators } from '@angular/forms';\n\nimport { Contact } from '../models/Contact';\n\n@Component({\n  selector: 'app-registration-form',\n  templateUrl: './registration-form.component.html',\n  styleUrls: ['./registration-form.component.scss'],\n})\nexport class RegistrationFormComponent implements OnInit {\n  @Input() registration = new FormGroup({});\n  @Output() submitForm = new EventEmitter<Contact>();\n  ngOnInit(): void {\n    this.initForm();\n  }\n  initForm() {\n    this.registration = new FormGroup({\n      name: new FormControl(''),\n      email: new FormControl('', [Validators.email, Validators.required]),\n      phoneNumber: new FormControl(''),\n      message: new FormControl(''),\n      privacy: new FormControl(false, Validators.requiredTrue),\n    });\n  }\n  @Input() onSubmit() {\n    return () => {\n      if (this.registration.valid) {\n        var contact: Contact =\n          (this.registration.value.name,\n          this.registration.value.email,\n          this.registration.value.phoneNumber,\n          this.registration.value.message,\n          this.registration.value.privacy);\n        this.submitForm.emit(contact);\n        alert('Success');\n      }\n      alert('Error');\n    };\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -733,7 +807,10 @@
                 }
             ],
             "stylesData": "",
-            "templateData": "<form\n  [formGroup]=\"registration\"\n  class=\"registrationForm\"\n  id=\"registrationForm\"\n>\n  <div class=\"formfield\">\n    <label for=\"name\">Name</label>\n    <input id=\"name\" type=\"text\" formControlName=\"name\" />\n  </div>\n  <div class=\"formfield formfield--middle\">\n    <label for=\"email\">Email</label>\n    <input id=\"email\" type=\"email\" formControlName=\"email\" />\n    <div\n    *ngIf=\"\n      registration.controls['email']?.invalid &&\n      registration.controls['email']?.dirty\n    \"\n    class=\"alert\"\n  >\n    <div *ngIf=\"registration.controls['email']?.errors?.['required']\">\n      Please enter email\n    </div>\n    <div *ngIf=\"registration.controls['email']?.errors?.['email']\">\n      Please enter valid email\n    </div>\n  </div>\n  </div>\n  \n  <div class=\"formfield formfield--middle\">\n    <label for=\"phoneNumber\">Phone Number</label>\n    <input id=\"phoneNumber\" type=\"tel\" formControlName=\"phoneNumber\" />\n  </div>\n  <div class=\"formfield formfield--middle\">\n    <label for=\"message\">Message</label>\n    <input id=\"message\" type=\"textarea\" formControlName=\"message\" />\n  </div>\n  <div class=\"row\">\n    <div class=\"checkbox\">\n      <input id=\"privacy\" type=\"checkbox\" formControlName=\"privacy\" />\n      <label for=\"privacy\">I agree to the privacy policy</label>\n    </div>\n    <app-button\n      data-testid=\"button\"\n      size=\"medium\"\n      [primary]=\"true\"\n      [clickAction]=\"onSubmit()\"\n      label=\"Submit\"\n    ></app-button>\n  </div>\n</form>\n"
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<form\n  [formGroup]=\"registration\"\n  class=\"registrationForm\"\n  id=\"registrationForm\"\n>\n  <div class=\"formfield\">\n    <label for=\"name\">Name</label>\n    <input id=\"name\" type=\"text\" formControlName=\"name\" />\n  </div>\n  <div class=\"formfield formfield--middle\">\n    <label for=\"email\">Email</label>\n    <input id=\"email\" type=\"email\" formControlName=\"email\" />\n    <div\n    *ngIf=\"\n      registration.controls['email']?.invalid &&\n      registration.controls['email']?.dirty\n    \"\n    class=\"alert\"\n  >\n    <div *ngIf=\"registration.controls['email']?.errors?.['required']\">\n      Please enter email\n    </div>\n    <div *ngIf=\"registration.controls['email']?.errors?.['email']\">\n      Please enter valid email\n    </div>\n  </div>\n  </div>\n  \n  <div class=\"formfield formfield--middle\">\n    <label for=\"phoneNumber\">Phone Number</label>\n    <input id=\"phoneNumber\" type=\"tel\" formControlName=\"phoneNumber\" />\n  </div>\n  <div class=\"formfield formfield--middle\">\n    <label for=\"message\">Message</label>\n    <input id=\"message\" type=\"textarea\" formControlName=\"message\" />\n  </div>\n  <div class=\"row\">\n    <div class=\"checkbox\">\n      <input id=\"privacy\" type=\"checkbox\" formControlName=\"privacy\" />\n      <label for=\"privacy\">I agree to the privacy policy</label>\n    </div>\n    <app-button\n      size=\"medium\"\n      [primary]=\"true\"\n      [clickAction]=\"onSubmit()\"\n      label=\"Submit\"\n    ></app-button>\n  </div>\n</form>\n"
         }
     ],
     "modules": [
@@ -857,21 +934,21 @@
                 "name": "environment",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/environments/environment.prod.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "object",
-                "defaultValue": "{\n  production: true\n}"
-            },
-            {
-                "name": "environment",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/environments/environment.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "object",
                 "defaultValue": "{\n  production: false\n}"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.prod.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  production: true\n}"
             },
             {
                 "name": "FilledForm",
@@ -1010,7 +1087,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<RegistrationFormComponent>",
-                "defaultValue": "(\n  args: RegistrationFormComponent\n) => ({\n  props: args,\n})"
+                "defaultValue": "(args: RegistrationFormComponent) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -1058,18 +1135,6 @@
                     "type": "literal type"
                 }
             ],
-            "src/environments/environment.prod.ts": [
-                {
-                    "name": "environment",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/environments/environment.prod.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "object",
-                    "defaultValue": "{\n  production: true\n}"
-                }
-            ],
             "src/environments/environment.ts": [
                 {
                     "name": "environment",
@@ -1080,6 +1145,18 @@
                     "deprecationMessage": "",
                     "type": "object",
                     "defaultValue": "{\n  production: false\n}"
+                }
+            ],
+            "src/environments/environment.prod.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.prod.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  production: true\n}"
                 }
             ],
             "src/app/shared/registration-form/registration-form.stories.ts": [
@@ -1111,7 +1188,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<RegistrationFormComponent>",
-                    "defaultValue": "(\n  args: RegistrationFormComponent\n) => ({\n  props: args,\n})"
+                    "defaultValue": "(args: RegistrationFormComponent) => ({\n  props: args,\n})"
                 }
             ],
             "src/app/modules/gsap-introduction/gsap-introduction.stories.ts": [
@@ -1280,7 +1357,7 @@
                 "linktype": "component",
                 "name": "GsapIntroductionComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/9",
+                "coverageCount": "0/11",
                 "status": "low"
             },
             {
@@ -1454,7 +1531,7 @@
                 "linktype": "component",
                 "name": "RegistrationFormComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/4",
+                "coverageCount": "0/7",
                 "status": "low"
             },
             {
