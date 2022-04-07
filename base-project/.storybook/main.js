@@ -20,5 +20,5 @@ module.exports = {
   "features": {
     "interactionsDebugger": true,
     "storyStoreV7": true,
-  },
+  }
 }

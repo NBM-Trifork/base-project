@@ -282,7 +282,7 @@
         },
         {
             "name": "GsapIntroductionComponent",
-            "id": "component-GsapIntroductionComponent-8f638ff58eb68899dadf76e7bb0cdb7cc755517f6d9849508184a137d5335da403c0684967eac1445963a7f5d79db838ad48704a9d349eaa33309501fc848d45",
+            "id": "component-GsapIntroductionComponent-d48ae7214fc1a131fb4c009575cd2fcffc57f00a885678300e2d06008ba62ec4e69076d1d7a8fd62583e379690e0d9d5dd502b5562a94bab1d142860b39ceac4",
             "file": "src/app/modules/gsap-introduction/gsap-introduction.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -328,7 +328,7 @@
                 },
                 {
                     "name": "section3Ease",
-                    "defaultValue": "'elastic.out(1, 0.3)'",
+                    "defaultValue": "'Circ.easeOut'",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 22,
@@ -359,7 +359,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 61,
+                    "line": 65,
                     "deprecated": false,
                     "deprecationMessage": ""
                 },
@@ -376,7 +376,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 38,
+                    "line": 42,
                     "deprecated": false,
                     "deprecationMessage": "",
                     "modifierKind": [
@@ -443,7 +443,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { DOCUMENT } from '@angular/common';\nimport { Component, Inject, Input, OnInit } from '@angular/core';\nimport ScrollTrigger from 'gsap/ScrollTrigger';\n\nimport { gsap } from 'gsap';\n\ngsap.registerPlugin(ScrollTrigger);\n\n@Component({\n  selector: 'app-gsap-introduction',\n  templateUrl: './gsap-introduction.component.html',\n  styleUrls: ['./gsap-introduction.component.scss'],\n})\nexport class GsapIntroductionComponent implements OnInit {\n  public title = 'gsap introduction';\n  @Input() panelEase: 'back.out(1.7)' | 'Circ.easeOut' | 'elastic.out(1, 0.3)' =\n    'Circ.easeOut';\n  @Input() cookieEase:\n    | 'back.out(1.7)'\n    | 'Circ.easeOut'\n    | 'elastic.out(1, 0.3)' = 'back.out(1.7)';\n    @Input() section3Ease:\n    | 'back.out(1.7)'\n    | 'Circ.easeOut'\n    | 'elastic.out(1, 0.3)' = 'elastic.out(1, 0.3)';\n  @Input() boxEase: 'back.out(1.7)' | 'Circ.easeOut' | 'elastic.out(1, 0.3)' =\n    'elastic.out(1, 0.3)';\n  constructor(@Inject(DOCUMENT) private document: Document) {}\n\n  ngOnInit() {\n    console.log('ScrollTrigger', ScrollTrigger);\n    this.animationOnScroll();\n  }\n  public clickButton2(event: any){\n    gsap.fromTo(\"#ctaAnimation\",{y: 60}, {y: 0, duration: 3, ease: this.section3Ease});\n  }\n\n  public clickButton(event: any) {\n    gsap.to('.panel', {\n      duration: 1.5,\n      scaleY: 1,\n      height: '100vh',\n      ease: this.panelEase,\n    });\n    gsap.to('#cookie', {\n      duration: 1,\n      opacity: 1,\n      y: 0,\n      delay: 1,\n      ease: this.cookieEase,\n    });\n    gsap.to('.firstP', {\n      duration: 1,\n      opacity: 1,\n      y: 20,\n      delay: 1.4,\n    });\n    gsap.to('.box', { duration: 4, scale: 1, opacity: 1, ease: this.boxEase });\n  }\n\n  animationOnScroll() {\n    gsap.to('.section2', {\n      scrollTrigger: {\n        trigger: '.section2',\n        scrub: true,\n        pin: true,\n        start: 'top top',\n        end: '+=500',\n        toggleClass: 'active',\n      },\n      duration: 1,\n      opacity: 1,\n      ease: 'power2',\n    });\n    gsap.to('.image1', {\n      scrollTrigger: {\n        trigger: '.section2',\n        scrub: true,\n        start: 'top bottom',\n        end: 'bottom -300',\n      },\n      duration: 1,\n      ease: this.panelEase,\n    });\n  }\n}\n",
+            "sourceCode": "import { DOCUMENT } from '@angular/common';\nimport { Component, Inject, Input, OnInit } from '@angular/core';\nimport ScrollTrigger from 'gsap/ScrollTrigger';\n\nimport { gsap } from 'gsap';\n\ngsap.registerPlugin(ScrollTrigger);\n\n@Component({\n  selector: 'app-gsap-introduction',\n  templateUrl: './gsap-introduction.component.html',\n  styleUrls: ['./gsap-introduction.component.scss'],\n})\nexport class GsapIntroductionComponent implements OnInit {\n  public title = 'gsap introduction';\n  @Input() panelEase: 'back.out(1.7)' | 'Circ.easeOut' | 'elastic.out(1, 0.3)' =\n    'Circ.easeOut';\n  @Input() cookieEase:\n    | 'back.out(1.7)'\n    | 'Circ.easeOut'\n    | 'elastic.out(1, 0.3)' = 'back.out(1.7)';\n  @Input() section3Ease:\n    | 'back.out(1.7)'\n    | 'Circ.easeOut'\n    | 'elastic.out(1, 0.3)' = 'Circ.easeOut';\n  @Input() boxEase: 'back.out(1.7)' | 'Circ.easeOut' | 'elastic.out(1, 0.3)' =\n    'elastic.out(1, 0.3)';\n  constructor(@Inject(DOCUMENT) private document: Document) {}\n\n  ngOnInit() {\n    console.log('ScrollTrigger', ScrollTrigger);\n    this.animationOnScroll();\n  }\n  public clickButton2(event: any) {\n    gsap.fromTo(\n      '#ctaAnimation',\n      { y: 60 },\n      { y: 0, duration: 3, ease: this.section3Ease }\n    );\n  }\n\n  public clickButton(event: any) {\n    gsap.to('.panel', {\n      duration: 1.5,\n      scaleY: 1,\n      height: '100vh',\n      ease: this.panelEase,\n    });\n    gsap.to('#cookie', {\n      duration: 1,\n      opacity: 1,\n      y: 0,\n      delay: 1,\n      ease: this.cookieEase,\n    });\n    gsap.to('.firstP', {\n      duration: 1,\n      opacity: 1,\n      y: 20,\n      delay: 1.4,\n    });\n    gsap.to('.box', { duration: 4, scale: 1, opacity: 1, ease: this.boxEase });\n  }\n\n  animationOnScroll() {\n    gsap.to('.section2', {\n      scrollTrigger: {\n        trigger: '.section2',\n        scrub: true,\n        pin: true,\n        start: 'top top',\n        end: '+=500',\n        toggleClass: 'active',\n      },\n      duration: 1,\n      opacity: 1,\n      ease: 'power2',\n    });\n    gsap.to('.image1', {\n      scrollTrigger: {\n        trigger: '.section2',\n        scrub: true,\n        start: 'top bottom',\n        end: 'bottom -300',\n      },\n      duration: 1,\n      ease: this.panelEase,\n    });\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -934,21 +934,21 @@
                 "name": "environment",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/environments/environment.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "object",
-                "defaultValue": "{\n  production: false\n}"
-            },
-            {
-                "name": "environment",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/environments/environment.prod.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "object",
                 "defaultValue": "{\n  production: true\n}"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  production: false\n}"
             },
             {
                 "name": "FilledForm",
@@ -1135,18 +1135,6 @@
                     "type": "literal type"
                 }
             ],
-            "src/environments/environment.ts": [
-                {
-                    "name": "environment",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/environments/environment.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "object",
-                    "defaultValue": "{\n  production: false\n}"
-                }
-            ],
             "src/environments/environment.prod.ts": [
                 {
                     "name": "environment",
@@ -1157,6 +1145,18 @@
                     "deprecationMessage": "",
                     "type": "object",
                     "defaultValue": "{\n  production: true\n}"
+                }
+            ],
+            "src/environments/environment.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  production: false\n}"
                 }
             ],
             "src/app/shared/registration-form/registration-form.stories.ts": [

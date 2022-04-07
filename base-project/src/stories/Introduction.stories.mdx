@@ -103,8 +103,6 @@ import Figma from './assets/figma.svg';
     font-size: 12px;
     display: inline-block;
   }
-
-  
 `}</style>
 
 # Introduction to Storybook
@@ -337,47 +335,6 @@ ExampleChangeEvent.play = async () => {
   await userEvent.selectOptions(select, ['Yet another item']);
 };
 ```
-
-
-## Integration to Figma
-
-<div className="subheading">Setup</div>
-
-<div className="link-list">
-    <a
-    className="link-item"
-    href="https://github.com/pocka/storybook-addon-designs/blob/master/README.md"
-    target="_blank"
-  >
-    <img src={Figma} alt="Figma" />
-    <span>
-      <strong>Figma addon</strong>
-      To embed Figma files and components within Storybook.
-    </span>
-  </a>
-</div>
-
-```jsx
-Primary.parameters ={
-    design: {
-        type: 'figma',
-        url: 'https://www.figma.com/file/SYjB6DD4YlJY1WdSqTYHsM/AngularComponents?node-id=29%3A217',
-      },
-}
-```
-
-Storybook comes with an addon to Figma, that makes it possible to show the designers design next to the live components. 
-
-A beta version is now available for an integration into Figma.
-<a
-    href="https://storybook.js.org/blog/figma-plugin-beta/"
-    target="_blank"
-  >
-<div className="tip-wrapper">
-  <span className="tip">Tip</span>Learn more about the new Figma plugin here {' '}
-</div>
-</a> 
-
 
 <div className="tip-wrapper">
   <span className="tip">Tip</span>Edit the Markdown in{' '}

@@ -27,6 +27,7 @@
     "@angular/router": "~13.2.0",
     "@mdx-js/esbuild": "^2.0.0",
     "@storybook/addon-a11y": "^6.4.20",
+    "@storybook/preset-scss": "^1.0.3",
     "@types/gsap": "^3.0.0",
     "gsap": "^3.9.1",
     "rxjs": "~7.5.0",
